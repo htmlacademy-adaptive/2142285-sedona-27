@@ -7,6 +7,7 @@
 </head>
 
 <body class="page__body">
+
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
       <img src="../images/main-logo.svg" width="185" height="96" alt="Логотип Седона.">
@@ -20,45 +21,6 @@
           <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" />
         </svg>
       </button>
-
-      <!-- разметка попевера
-
-      <div class="popover popover-menu">
-
-        <button class="popover__close__button button">
-          <svg width="23" height="23" viewBox="0 0 23 23" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z" />
-          </svg>
-          <span class="visually-hidden">Закрыть</span>
-        </button>
-
-        <div class="popover__content">
-          <h2 class="popover__title visually-hidden">Меню</h2>
-
-          <ul class="popover-nav__list">
-            <li class="popover-nav__item">
-              <a class="popover__link button" href="index.html">ГЛАВНАЯ
-              </a>
-            </li>
-            <li class="popover__item">
-              <a class="popover__link button" href="catalog.html">ФОТО И ВИДЕО
-              </a>
-            </li>
-            <li class="popover__item">
-              <a class="popover__link button" href="form.html"> ФОРМА ОТЗЫВА
-              </a>
-            </li>
-            <li class="popover__item">
-              <a class="popover__link button" href="#">HTML ACADEMY
-              </a>
-            </li>
-          </ul>
-
-        </div>
-
-      </div>
-    -->
 
       <div class="main-nav__wrapper">
         <ul class="main-nav__list left-list">
@@ -85,89 +47,117 @@
     </nav>
   </header>
 
-  <main class="main-container">
-    <h1 class="visually-hidden">Добро пожаловать в Седону.</h1>
+  <main class="main-catalog-container">
+    <h1 class="visually-hidden">Фото и видео города Седона.</h1>
 
     <section class="intro">
       <div class="intro__wrapper">
         <div class="intro__background-image">
-          <img src="../images/itro/welcom.svg" width="282" height="214"
-            alt="Добро пожаловать в великолепную Седону, потому что Гранд-Каньон отстой.">
+          <img src="../images/catalog/sedona-catalog.svg" width="229" height="39"
+            alt="Добро пожаловать в великолепную Седону.">
         </div>
-        <p class="intro__slogan">СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</p>
-        <p class="intro__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <div class="intro__text text">
+          <p class="text__titel">Фото и видео</p>
+          <p class="text__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+            политике и экономике.</p>
+        </div>
       </div>
     </section>
 
-    <section class="advantages">
-      <div class="advantages__wrapper">
-        <h2 class="visually-hidden">Преимущества города Седона.</h2>
+    <section class="photo">
+      <div class="photo__wrapper">
+        <h2 class="visually-hidden">Фотографии города Седона от разных фотографов.</h2>
 
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <h3 class="advantages__title">Настоящий городок</h3>
-            <p class="advantages__number"> — №1 — </p>
-            <p class="advantages__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
-            <img class="advantages__img" src="../images/advantage/photo-city.jpg" width="520" height="260"
-              alt="Дом города Седона.">
+        <ul class="photo__list">
+          <li class="photo__item">
+            <img class="photo__img" src="../images/catalog/photo-1.jpg" width="280" height="280"
+              alt="дорога на в пустыне на закате">
+            <h3 class="photo__title"> неродные просторы </h3>
+            <p class="photo__author"> Автор фото: Борис</p>
+            <div class="photo__like like">
+              <button class="like__toggle button" type="button">
+                <svg aria-hidden="true" focusable="false" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path opacity=".3"
+                    d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
+                    fill="#000" />
+                </svg>
+                <span class="visually-hidden">Поставить лайк фото.</span>
+              </button>
+              <button class="like__counter button" type="button">1350</button>
+            </div>
           </li>
 
-          <li class="advantages__item advantage__item--house">
-            <h3 class="advantages__title">Жилье</h3>
-            <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          <li class="photo__item">
+            <img class="photo__img" src="../images/catalog/photo-2.jpg" width="280" height="280"
+              alt="дорога на в пустыне на закате">
+            <h3 class="photo__title"> Местная растительность </h3>
+            <p class="photo__author"> Автор фото: Сергей</p>
+            <div class="photo__like like">
+              <button class="like__toggle button" type="button">
+                <svg aria-hidden="true" focusable="false" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path opacity=".3"
+                    d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
+                    fill="#000" />
+                </svg>
+                <span class="visually-hidden">Поставить лайк фото.</span>
+              </button>
+              <button class="like__counter button" type="button">143</button>
+            </div>
           </li>
 
-          <li class="advantages__item advantage__item--food">
-            <h3 class="advantages__title">ЕДА</h3>
-            <p class="advantages__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+          <li class="photo__item">
+            <img class="photo__img" src="../images/catalog/photo-3.jpg" width="280" height="280"
+              alt="дорога на в пустыне на закате">
+            <h3 class="photo__title"> Дорога на север </h3>
+            <p class="photo__author"> Автор фото: Петр</p>
+            <div class="photo__like like">
+              <button class="like__toggle button" type="button">
+                <svg aria-hidden="true" focusable="false" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path opacity=".3"
+                    d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
+                    fill="#000" />
+                </svg>
+                <span class="visually-hidden">Поставить лайк фото.</span>
+              </button>
+              <button class="like__counter button" type="button">96</button>
+            </div>
           </li>
 
-          <li class="advantages__item advantage__item--gift">
-            <h3 class="advantages__title">СУВЕНИРЫ</h3>
-            <p class="advantages__description">Не только китайского, но и местного производства!</p>
-          </li>
-
-          <li class="advantages__item">
-            <h3 class="advantages__title">ТАМ ЕСТЬ Мост дьявола</h3>
-            <p class="advantages__number"> — №2 — </p>
-            <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            <img class="advantage-img" src="../images/advantage/photo-bridge.jpg" width="520" height="260"
-              alt="Мост Дьявола.">
-          </li>
-
-          <li class="advantages__item">
-            <h3 class="advantages__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
-            <p class="advantages__number"> — №3 — </p>
-            <p class="advantages__description">ВСЕ интересные места находятся очень близко</p>
-          </li>
-
-          <li class="advantages__item">
-            <h3 class="advantages__title">КРАСИВАЯ ДОРОГА</h3>
-            <p class="advantages__number"> — №4 — </p>
-            <p class="advantages__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
-          </li>
-
-          <li class="advantages__item">
-            <h3 class="advantages__title">МАЛО ТУРИСТОВ</h3>
-            <p class="advantages__number"> — №5 — </p>
-            <p class="advantages__description">Большинство едет в гранд каньон и толпится там</p>
+          <li class="photo__item">
+            <img class="photo__img" src="../images/catalog/photo-4.jpg" width="280" height="280"
+              alt="дорога на в пустыне на закате">
+            <h3 class="photo__title"> Мост дьявола </h3>
+            <p class="photo__author"> Автор фото: Антон</p>
+            <div class="photo__like like">
+              <button class="like__toggle button" type="button">
+                <svg aria-hidden="true" focusable="false" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path opacity=".3"
+                    d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
+                    fill="#000" />
+                </svg>
+                <span class="visually-hidden">Поставить лайк фото.</span>
+              </button>
+              <button class="like__counter button" type="button">254</button>
+            </div>
           </li>
 
         </ul>
+
       </div>
     </section>
 
-    <section class="search">
-      <div class="search__wrapper">
-        <h2 class="search__titel">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-        <p class="search__descrition">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
-          в седоне</p>
-        <a class="search__button button" href="#">Найти Гостиницу</a>
+    <section class="video">
+      <div class="video__wrapper">
+        <p class="video__title">Все еще сомневаетесь?</p>
+        <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+          очередной раз!</p>
       </div>
-    </section>
-
-    <section class="map">
-      <img src="../images/map.jpg" width="320" height="350" alt="Спутникова карта месторасположение города Седоны.">
+      <img class="video__img" src="../images/catalog/video.jpg" width="280" height="177"
+        alt="трасса в каньоне между гор.">
     </section>
 
   </main>
@@ -212,7 +202,7 @@
           </li>
 
           <li class="social__item">
-            <a class="soci__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
               <svg aria-hidden="true" focusable="false" width="48" height="48" viewBox="0 0 48 48" fill="currenColor"
                 xmlns="http://www.w3.org/2000/svg">
                 <path fill="#81B3D2" d="M0 0h48v48H0z" />
@@ -240,5 +230,3 @@
   </footer>
 
 </body>
-
-</html>
