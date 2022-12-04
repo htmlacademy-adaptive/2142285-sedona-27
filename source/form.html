@@ -24,11 +24,11 @@
         </svg>
       </button>
 
-      <ul class="main-nav__list">
+      <button class="main-nav__button-close" type="button">
+        <span class="visually-hidden">Закрыть.</span>
+      </button>
 
-        <button class="main-nav__button-close" type="button">
-          <span class="visually-hidden">Закрыть.</span>
-        </button>
+      <ul class="main-nav__list">
 
         <li class="main-nav__item">
           <a class="main-nav__link main-nav__button button" href="index.html">Главаная
@@ -198,14 +198,14 @@
           </fieldset>
 
           <div class="form__button-wrap">
-          <div class="form__button">
-            <button class="form__button button" type="submit">Отправить отзыв</button>
-          </div>
+            <div class="form__button">
+              <button class="form__button button" type="submit">Отправить отзыв</button>
+            </div>
 
-          <small class="required-field">
-            * — обязательные поля
-          </small>
-        </div>
+            <small class="required-field">
+              * — обязательные поля
+            </small>
+          </div>
         </form>
       </div>
     </section>
@@ -269,32 +269,34 @@
     </div>
   </footer>
 
-<div class="modal-error modal-error--close">
-<div class="modal-error modal-auth">
+  <div class="modal-error modal-error--close">
+    <div class="modal-error modal-auth">
 
-  <section class="modal-error__content">
-    <div class="modal-error__text">
+      <section class="modal-error__content">
+        <div class="modal-error__text">
           <h2 class="modal-error__title">Что-то пошло не так!</h2>
-    <p class="modal-error__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <p class="modal-error__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+          </p>
+        </div>
+        <button class="modal-error__button button">ок</button>
+      </section>
+
     </div>
-<button class="modal-error__button button">ок</button>
-  </section>
-
-</div>
-</div>
-
-<div class="modal-accepted modal-accepted--close">
-  <div class="modal-accepted modal-auth">
-
-    <section class="modal-accepted__content">
-      <div class="modal-accepted__text">
-      <h2 class="modal-accepted__title">Ваш отзыв отправлен!</h2>
-      <p class="modal-accepted__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      </div>
-  <button class="modal-accepted__button button">Закрыть окно</button>
-    </section>
-
   </div>
+
+  <div class="modal-accepted modal-accepted--close">
+    <div class="modal-accepted modal-auth">
+
+      <section class="modal-accepted__content">
+        <div class="modal-accepted__text">
+          <h2 class="modal-accepted__title">Ваш отзыв отправлен!</h2>
+          <p class="modal-accepted__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее
+            время мы опубликуем его на сайте.</p>
+        </div>
+        <button class="modal-accepted__button button">Закрыть окно</button>
+      </section>
+
+    </div>
   </div>
 
 </body>
