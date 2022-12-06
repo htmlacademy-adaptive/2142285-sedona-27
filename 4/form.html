@@ -58,17 +58,16 @@
   <main class="main-form-container">
     <h1 class="visually-hidden"> Отзывы о Седоне.</h1>
 
-    <section class="intro-catalog">
-      <div class="intro-catalog__wrapper">
-        <div class="intro-catalog__background-image">
-          <img src="./images/catalog/sedona-catalog.svg" width="229" height="39"
-            alt="Добро пожаловать в великолепную Седону.">
-        </div>
-        <div class="intro__text text-form">
-          <p class="text-form__titel">Оставьте свой отзыв</p>
-          <p class="text-form__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
-            посещенных вами достопримечательностях</p>
-        </div>
+    <section class="intro">
+      <div class="intro__background-image intro__background-image--catalog">
+        <img src="./images/intro/intro-catalog-welcom.svg" width="229" height="39"
+          alt="Добро пожаловать в великолепную Седону, потому что Гранд-Каньон отстой.">
+      </div>
+      <div class="intro__wrapper">
+        <h2 class="intro__slogan">Оставьте свой отзыв</h2>
+        <p class="intro__description intro__description--catalog">Помогите нашим отелям стать лучше! оставьте отзыв о
+          них, а также о
+          посещенных вами достопримечательностях</p>
       </div>
     </section>
 
@@ -126,7 +125,7 @@
               <li class="impress__item">
                 <label class="impress__control control">
                   <input class="control__input  visually-hidden" type="radio" name="positive" checked>
-                  <span class="control__mark--circle"></span>
+                  <span class="control__circle"></span>
                   <span class="control__label"> Скорее положительное </span>
                 </label>
               </li>
@@ -134,7 +133,7 @@
               <li class="impress__item">
                 <label class="impress__control control">
                   <input class="control__input visually-hidden" type="radio" name="negative">
-                  <span class="control__mark--circle"></span>
+                  <span class="control__circle"></span>
                   <span class="control__label"> Скорее отрицательное </span>
                 </label>
               </li>
@@ -142,7 +141,7 @@
               <li class="impress__item">
                 <label class="impress__control control">
                   <input class="control__input  visually-hidden" type="radio" name="doubt">
-                  <span class="control__mark--circle"></span>
+                  <span class="control__circle"></span>
                   <span class="control__label"> Затрудняюсь ответить </span>
                 </label>
               </li>
@@ -198,10 +197,8 @@
               placeholder="Опишите подробно все свои восторги">
           </fieldset>
 
-          <div class="form__button-wrap">
-            <div class="form__button">
-              <button class="form__button button" type="submit">Отправить отзыв</button>
-            </div>
+          <div class="form__wrape">
+            <button class="form__button button" type="submit">Отправить отзыв</button>
 
             <small class="required-field">
               * — обязательные поля
@@ -270,34 +267,31 @@
     </div>
   </footer>
 
-  <div class="modal-error modal-error--close">
-    <div class="modal-error modal-auth">
 
-      <section class="modal-error__content">
-        <div class="modal-error__text">
-          <h2 class="modal-error__title">Что-то пошло не так!</h2>
-          <p class="modal-error__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+  <section class="modal">
+    <div class="modal__error modal__error--close">
+      <div class="modal__error modal__auth">
+        <div class="modal__text">
+          <h2 class="modal__title">Что-то пошло не так!</h2>
+          <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
           </p>
         </div>
-        <button class="modal-error__button button">ок</button>
-      </section>
-
+        <button class="modal__error--button button">ок</button>
+      </div>
     </div>
-  </div>
 
-  <div class="modal-accepted modal-accepted--close">
-    <div class="modal-accepted modal-auth">
-
-      <section class="modal-accepted__content">
-        <div class="modal-accepted__text">
-          <h2 class="modal-accepted__title">Ваш отзыв отправлен!</h2>
-          <p class="modal-accepted__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее
+    <div class="modal__accepted modal__accepted--close">
+      <div class="modal__accepted modal__auth">
+        <div class="modal__text">
+          <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+          <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее
             время мы опубликуем его на сайте.</p>
         </div>
-        <button class="modal-accepted__button button">Закрыть окно</button>
-      </section>
-
+        <button class="modal__accepted--button button">Закрыть окно</button>
+      </div>
     </div>
-  </div>
+  </section>
+
+
 
 </body>

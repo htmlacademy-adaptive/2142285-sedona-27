@@ -120,10 +120,10 @@ img {
   display: block;
   padding-top: 17px;
   padding-bottom: 12px;
-  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 .main-nav__button-close {
-  background-image: url(./images/icon-close.svg);
+  background-image: url("./images/icon-close.svg");
   width: 22px;
   height: 22px;
   border: none;
@@ -144,15 +144,20 @@ img {
   background-color: #58b8f8;
   width: 320px;
   height: 389px;
-  background: url("../images/itro/intro-trangle-up.svg") no-repeat bottom, url("../images/itro/back-mobile.jpg") center no-repeat;
+  background: url("../images/intro/intro-triangle-up.svg") no-repeat bottom, url("../images/intro/back-mobile.jpg") right bottom no-repeat;
   background-size: cover;
   box-sizing: border-box;
   padding-top: 90px;
   text-align: center;
 }
+.intro__background-image--catalog {
+  height: 158px;
+  background: url("../images/intro/intro-triangle-up.svg") no-repeat bottom, url("../images/intro/back-mobile.jpg") right bottom no-repeat;
+  padding-top: 52px;
+}
 .intro__wrapper {
   padding-left: 18px;
-  padding-bottom: 16px;
+  padding-bottom: 28px;
   padding-top: 32px;
   padding-right: 18px;
 }
@@ -175,6 +180,9 @@ img {
   text-transform: uppercase;
   margin: 0;
 }
+.intro__description--catalog {
+  font-size: 12px;
+}
 .advantages__list {
   margin: 0;
   padding: 0;
@@ -188,6 +196,15 @@ img {
   text-transform: uppercase;
   margin: 0;
   padding-bottom: 11px;
+}
+.advantages__title--icon {
+  padding-bottom: 16px;
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
 }
 .advantages__number {
   font-style: normal;
@@ -206,8 +223,11 @@ img {
   text-transform: uppercase;
   margin: 0;
 }
+.advantages__item {
+  background-color: #eeeeee;
+}
 .advantages__item--triangle {
-  background: url(../images/itro/itro-trangle-down.svg) no-repeat top;
+  background: url("../images/intro/itro-trangle-down.svg") no-repeat top;
   background-color: #81b3d2;
   color: #ffffff;
   padding-top: 21px;
@@ -216,12 +236,23 @@ img {
   background-color: #81b3d2;
   color: #ffffff;
 }
-.advantages__text--photo {
+.advantages__text {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-align: center;
   padding-left: 18px;
   padding-right: 18px;
+}
+.advantages__text--photo {
   padding-bottom: 37px;
   padding-top: 37px;
   text-align: center;
+}
+.advantages__text--icon {
+  padding-left: 47px;
+  padding-bottom: 33px;
+  padding-top: 7px;
+  text-align: left;
 }
 .advantages__img {
   width: 320px;
@@ -239,38 +270,14 @@ img {
   padding-top: 24px;
   margin: 0;
 }
-.advantages__text--icon {
-  padding-left: 47px;
-  padding-bottom: 33px;
-  padding-top: 7px;
-  text-align: left;
-}
 .advantages__item--house {
-  background: url(../images/advantage/icon-house.svg) no-repeat;
+  background: url("../images/advantage/icon-house.svg") no-repeat;
 }
 .advantages__item--food {
-  background: url(../images/advantage/icon-burger.svg) no-repeat;
+  background: url("../images/advantage/icon-burger.svg") no-repeat;
 }
 .advantages__item--gift {
-  background: url(../images/advantage/icon-gift.svg) no-repeat;
-}
-.advantages__title--icon {
-  padding-bottom: 16px;
-  margin: 0;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-.advantages__item {
-  background-color: #eeeeee;
-  padding: 0 18px 28px 18px;
-}
-.advantages__text {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  text-align: center;
+  background: url("../images/advantage/icon-gift.svg") no-repeat;
 }
 .search {
   padding: 38px 18px 49px 18px;
@@ -345,38 +352,6 @@ img {
 .main-catalog-container {
   margin: 0;
   padding: 0;
-}
-.intro-catalog__background-image {
-  background-color: #58b8f8;
-  width: 320px;
-  height: 158px;
-  background: url("../images/itro/intro-trangle-up.svg") no-repeat bottom, url("../images/itro/background-inro-catalog.jpg") right bottom no-repeat;
-  box-sizing: border-box;
-  padding-top: 52px;
-  text-align: center;
-}
-.intro__text {
-  padding: 37px 20px 25px 20px;
-  text-align: center;
-}
-.text__titel {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0;
-  padding-bottom: 20px;
-}
-.text__description {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0;
 }
 .photo__wrapper {
   padding: 24px 20px 24px 20px;
@@ -527,12 +502,12 @@ img {
   background: #f2f2f2;
   border: none;
 }
-.form__button-wrap {
+.form__wrape {
   padding: 0 20px 24px 20px;
 }
 .form__button {
   width: 280px;
-  height: 58px;
+  padding: 16px 30px 16px 30px;
   margin: 0;
 }
 .required-field {
@@ -574,21 +549,21 @@ img {
   margin: 0;
   padding: 0;
 }
-.modal-error__text {
+.modal__text {
   padding: 45px 41px 28px 41px;
   text-align: center;
 }
-.modal-error__title {
+.modal__title {
   font-style: normal;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 18px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
   margin: 0;
   padding-bottom: 20px;
 }
-.modal-error__description {
+.modal__description {
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -597,37 +572,18 @@ img {
   text-transform: uppercase;
   margin: 0;
 }
-.modal-error__button {
+.modal__error--button {
   width: 180px;
-  height: 58px;
+  padding: 18px 63px 14px 64px;
   margin: 0 70px 35px 70px;
-}
-.modal-accepted__text {
-  padding: 53px 97px 74px 99px;
-  text-align: center;
-}
-.odal-accepted__title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0;
-  padding-bottom: 20px;
 }
-.modal-accepted__description {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0;
-}
-.modal-accepted__button {
-  width: 458px;
-  height: 58px;
-  margin: 0 70px 35px 70px;
+.modal__accepted--button {
+  width: 280px;
+  padding: 18px 60px 14px 62px;
+  margin: 20px;
+  font-size: 18px;
+  line-height: 26px;
 }
 /*# sourceMappingURL=style.css.map */
