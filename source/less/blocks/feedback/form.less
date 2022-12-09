@@ -4,14 +4,6 @@
   padding: 0;
 }
 
-.introduce {
-  padding: 24px 20px 39px 20px;
-}
-
-.customer-contact {
-  padding: 24px 20px 34px 20px;
-}
-
 .form__titel {
   font-style: normal;
   font-weight: 700;
@@ -32,19 +24,12 @@
   margin: 0;
 }
 
-.introduce-field {
-  width: 280px;
-  height: 58px;
-  background: #f2f2f2;
-  border: none;
-  margin-bottom: 16px;
-}
+.feedback__wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 0 60px 0 60px;
+  }
 
-.customer-contact-field {
-  width: 280px;
-  height: 58px;
-  background: #f2f2f2;
-  border: none;
-  padding-right: 40px;
-  margin-bottom: 16px;
+  @media (min-width: @desktop-width) {
+    padding: 0 120px 0 120px;
+  }
 }

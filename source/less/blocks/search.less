@@ -4,6 +4,14 @@
 
 .search__text {
   padding: 0 11px 32px 11px;
+
+  @media (min-width: @tablet-width) {
+    padding: 61px 110px 40px 110px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 69px 300px 45px 300px;
+  }
 }
 
 .search__titel {
@@ -30,4 +38,15 @@
 .search__button {
   padding: 16px 0 16px 0;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+    padding: 14px 0 17px 0;
+    margin-left: 155px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 14px 1px 17px 1px;
+    margin-left: 371px;
+  }
 }

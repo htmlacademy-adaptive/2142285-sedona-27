@@ -4,15 +4,31 @@
   padding-left: 18px;
   padding-right: 18px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    @media (min-width: @desktop-width) {
+      width: 1200px;
+    }
+  }
 }
 
 .main-header__logo {
   margin-left: 49px;
   margin-right: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .main-nav {
-  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -32,12 +48,20 @@
   &:active {
     color: fade(@color-blue, 30%);
   }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .main-nav__link {
@@ -45,14 +69,34 @@
   font-family: inherit;
   font-size: 18px;
   line-height: 26px;
+
+  &:hover {
+    color: @color-blue;
+    background: transparent;
+  }
+
+  &:active {
+    color: fade(#000000, 30%);
+  }
+
+  @media (min-width: @tablet-width) {
+    color: #000000;
+    padding: 0;
+  }
 }
 
 .main-nav__button {
-  width: 320px;
   display: block;
   padding-top: 17px;
   padding-bottom: 12px;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+    box-shadow: none;
+    padding-bottom: 17px;
+    padding-top: 18px;
+  }
 }
 
 .main-nav__button-close {
@@ -68,5 +112,15 @@
 
   &:active {
     opacity: 30%;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__button--current {
+    color: #766357;
   }
 }
