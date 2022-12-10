@@ -1,0 +1,56 @@
+.advantages-inner__list {
+  list-style-type: none;
+  background-color: #ffffff;
+  color: #000000;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 13px;
+  padding-top: 24px;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 256px);
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(3, 400px);
+  }
+}
+
+.advantages__item--house {
+  background: url("../images/advantage/icon-house.svg") no-repeat;
+
+  @media (min-width: @tablet-width) {
+    padding: 158px 33px 60px 33px;
+    background-size: 77px 72px;
+    background-position: center 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 169px 50px 69px 50px;
+    background-size: 79px 72px;
+    background-position: center 80px;
+  }
+}
+
+.advantages__item--food {
+  background: url("../images/advantage/icon-burger.svg") no-repeat;
+
+  @media (min-width: @tablet-width) {
+    padding: 158px 33px 60px 33px;
+    background-size: 77px 72px;
+    background-position: center 80px;
+  }
+}
+
+.advantages__item--gift {
+  background: url("../images/advantage/icon-gift.svg") no-repeat;
+
+  @media (min-width: @tablet-width) {
+    padding: 158px 33px 60px 33px;
+    background-size: 77px 72px;
+    background-position: center 80px;
+  }
+}
