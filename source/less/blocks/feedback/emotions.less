@@ -1,9 +1,12 @@
 .emotions {
   padding: 24px 20px 56px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 73px 0 48px 0;
+  }
 }
 
 .emotions__titel {
-  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -12,18 +15,17 @@
   height: 150px;
   background: #f2f2f2;
   border: none;
-}
+  padding: 16px;
 
-.form__wrape {
-  padding: 0 20px 24px 20px;
-}
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    height: 160px;
+    padding: 16px;
+  }
 
-.form__button {
-  width: 280px;
-  padding: 16px 30px 16px 30px;
-  margin: 0;
-}
-
-.required-field {
-  padding-left: 115px;
+  @media (min-width: @desktop-width) {
+    width: 768px;
+    margin-left: 96px;
+    margin-right: 96px;
+  }
 }

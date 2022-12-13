@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,11 +14,11 @@
       <img src="./images/main-logo.svg" width="185" height="96" alt="Логотип Седона.">
     </a>
 
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed  main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню.</span>
-        <svg aria-hidden="true" focusable="false" width="23" height="22" viewBox="0 0 23 22" fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg">
+        <svg aria-hidden="true" focusable="false" width="23" height="22"
+          viewBox="0 0 23 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" />
         </svg>
       </button>
@@ -29,7 +30,7 @@
       <ul class="main-nav__list">
 
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__button button" href="index.html">Главаная
+          <a class="main-nav__link main-nav__button main-nav__button--current button" href="index.html">Главаная
           </a>
         </li>
 
@@ -57,7 +58,7 @@
 
     <section class="intro">
       <div class="intro__background-image">
-        <img src="./images/intro/welcom.svg" width="282" height="214"
+        <img class="intro__picture" src="./images/intro/welcom.svg" width="282" height="214"
           alt="Добро пожаловать в великолепную Седону, потому что Гранд-Каньон отстой.">
       </div>
       <div class="intro__wrapper">
@@ -73,15 +74,17 @@
       <ul class="advantages__list">
 
         <li class="advantages__item advantages__item--triangle">
-          <div class="advantages__text advantages__text--photo">
-            <h3 class="advantages__title">Настоящий городок</h3>
-            <p class="advantages__number"> — №1 — </p>
-            <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <div class="advantages__wrapper">
+            <div class="advantages__text advantages__text--photo">
+              <h3 class="advantages__title">Настоящий городок</h3>
+              <p class="advantages__number"> — №1 — </p>
+              <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <img class="advantages__img" src="./images/advantage/photo-city.jpg" width="520" height="260"
+              alt="Дом города Седона.">
           </div>
-          <img class="advantages__img" src="./images/advantage/photo-city.jpg" width="520" height="260"
-            alt="Дом города Седона.">
 
-          <ul class="advantages-inner__list">
+          <ul class="advantages__list advantages__list-inner ">
 
             <li class="advantages__item advantages__item--house">
               <div class="advantages__text advantages__text--icon">
@@ -107,7 +110,7 @@
         </li>
 
         <li class="advantages__item advantages__item--photo">
-          <div class="advantages__text--photo">
+          <div class="advantages__text advantages__text--photo">
             <h3 class="advantages__title">Там есть Мост дьявола</h3>
             <p class="advantages__number"> — №2 — </p>
             <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
@@ -116,7 +119,7 @@
             alt="Мост Дьявола.">
         </li>
 
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--empty">
           <div class="advantages__text">
             <h3 class="advantages__title">Небольшая площадь</h3>
             <p class="advantages__number"> — №3 — </p>
@@ -124,7 +127,7 @@
           </div>
         </li>
 
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--empty">
           <div class="advantages__text">
             <h3 class="advantages__title">Красивая дорога</h3>
             <p class="advantages__number"> — №4 — </p>
@@ -132,7 +135,7 @@
           </div>
         </li>
 
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--empty">
           <div class="advantages__text">
             <h3 class="advantages__title"> Мало туристов</h3>
             <p class="advantages__number"> — №5 — </p>
@@ -155,7 +158,8 @@
     </section>
 
     <section class="map">
-      <img src="./images/map.jpg" width="320" height="350" alt="Спутникова карта месторасположение города Седоны.">
+      <img class="map__img" src="./images/map.jpg" width="320" height="350"
+        alt="Спутникова карта месторасположение города Седоны.">
     </section>
 
   </main>
@@ -204,7 +208,7 @@
       </div>
 
       <div class="main-footer__create create">
-        <a class="create__link" href="https://htmlacademy.ru/">
+        <a class="create__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg aria-hidden="true" focusable="false" width="128" height="35" viewBox="0 0 128 35" fill="currentColor"
             xmlns="http://www.w3.org/2000/svg">
             <path

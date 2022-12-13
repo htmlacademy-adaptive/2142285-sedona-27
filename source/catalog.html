@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -34,7 +35,7 @@
         </li>
 
         <li class="main-nav__item">
-          <a class="main-nav__link main-nav__button button" href="catalog.html">Фото и видео
+          <a class="main-nav__link main-nav__button main-nav__button--current button" href="catalog.html">Фото и видео
           </a>
         </li>
 
@@ -55,8 +56,8 @@
 
     <section class="intro">
       <div class="intro__background-image intro__background-image--catalog">
-        <img src="./images/intro/intro-catalog-welcom.svg" width="229" height="39"
-          alt="Добро пожаловать в великолепную Седону, потому что Гранд-Каньон отстой.">
+        <img class="intro__picture intro__picture--catalog" src="./images/intro/intro-catalog-welcom.svg" width="229"
+          height="39" alt="Добро пожаловать в великолепную Седону, потому что Гранд-Каньон отстой.">
       </div>
       <div class="intro__wrapper">
         <h2 class="intro__slogan">Фото и видео</h2>
@@ -74,76 +75,96 @@
           <li class="photo__item">
             <img class="photo__img" src="./images/catalog/photo-1.jpg" width="280" height="280"
               alt="дорога на в пустыне на закате">
-            <h3 class="photo__title"> неродные просторы </h3>
-            <p class="photo__author"> Автор фото: Борис</p>
-            <div class="photo__like like">
-              <button class="like__toggle button" type="button">
-                <svg aria-hidden="true" focusable="false" width="23" height="21" viewBox="0 0 23 21" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path opacity=".3"
-                    d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
-                    fill="#000" />
-                </svg>
-                <span class="visually-hidden">Поставить лайк фото.</span>
-              </button>
-              <button class="like__counter button" type="button">1350</button>
+            <div class="photo__contaiter">
+              <div class="photo__text">
+                <h3 class="photo__title"> неродные просторы </h3>
+                <p class="photo__author"> Автор фото: Борис</p>
+              </div>
+              <div class="photo__like like">
+                <button class="like__toggle button" type="button">
+                  <svg aria-hidden="true" focusable="false" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path opacity=".3"
+                      d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
+                      fill="#000" />
+                  </svg>
+                  <span class="visually-hidden">Поставить лайк фото.</span>
+                </button>
+                <p class="like__counter">1350</p>
+              </div>
+
             </div>
           </li>
 
           <li class="photo__item">
             <img class="photo__img" src="./images/catalog/photo-2.jpg" width="280" height="280"
               alt="дорога на в пустыне на закате">
-            <h3 class="photo__title"> Местная растительность </h3>
-            <p class="photo__author"> Автор фото: Сергей</p>
-            <div class="photo__like like">
-              <button class="like__toggle button" type="button">
-                <svg aria-hidden="true" focusable="false" width="23" height="21" viewBox="0 0 23 21" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path opacity=".3"
-                    d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
-                    fill="#000" />
-                </svg>
-                <span class="visually-hidden">Поставить лайк фото.</span>
-              </button>
-              <button class="like__counter button" type="button">143</button>
+            <div class="photo__contaiter">
+              <div class="photo__text">
+                <h3 class="photo__title"> Местная растительность </h3>
+                <p class="photo__author"> Автор фото: Сергей</p>
+              </div>
+              <div class="photo__like like">
+                <button class="like__toggle button" type="button">
+                  <svg aria-hidden="true" focusable="false" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path opacity=".3"
+                      d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
+                      fill="#000" />
+                  </svg>
+                  <span class="visually-hidden">Поставить лайк фото.</span>
+                </button>
+                <p class="like__counter">143</p>
+              </div>
+
             </div>
           </li>
 
           <li class="photo__item">
             <img class="photo__img" src="./images/catalog/photo-3.jpg" width="280" height="280"
               alt="дорога на в пустыне на закате">
-            <h3 class="photo__title"> Дорога на север </h3>
-            <p class="photo__author"> Автор фото: Петр</p>
-            <div class="photo__like like">
-              <button class="like__toggle button" type="button">
-                <svg aria-hidden="true" focusable="false" width="23" height="21" viewBox="0 0 23 21" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path opacity=".3"
-                    d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
-                    fill="#000" />
-                </svg>
-                <span class="visually-hidden">Поставить лайк фото.</span>
-              </button>
-              <button class="like__counter button" type="button">96</button>
+            <div class="photo__contaiter">
+              <div class="photo__text">
+                <h3 class="photo__title"> Дорога на север </h3>
+                <p class="photo__author"> Автор фото: Петр</p>
+              </div>
+              <div class="photo__like like">
+                <button class="like__toggle button" type="button">
+                  <svg aria-hidden="true" focusable="false" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path opacity=".3"
+                      d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
+                      fill="#000" />
+                  </svg>
+                  <span class="visually-hidden">Поставить лайк фото.</span>
+                </button>
+                <p class="like__counter">96</p>
+              </div>
+
             </div>
           </li>
 
           <li class="photo__item">
             <img class="photo__img" src="./images/catalog/photo-4.jpg" width="280" height="280"
               alt="дорога на в пустыне на закате">
-            <h3 class="photo__title"> Мост дьявола </h3>
-            <p class="photo__author"> Автор фото: Антон</p>
-            <div class="photo__like like">
-              <button class="like__toggle button" type="button">
-                <svg aria-hidden="true" focusable="false" width="23" height="21" viewBox="0 0 23 21" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path opacity=".3"
-                    d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
-                    fill="#000" />
-                </svg>
-                <span class="visually-hidden">Поставить лайк фото.</span>
-              </button>
-              <button class="like__counter button" type="button">254</button>
+            <div class="photo__contaiter">
+              <div class="photo__text">
+                <h3 class="photo__title"> Мост дьявола </h3>
+                <p class="photo__author"> Автор фото: Антон</p>
+              </div>
+              <div class="photo__like like">
+                <button class="like__toggle button" type="button">
+                  <svg aria-hidden="true" focusable="false" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path opacity=".3"
+                      d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z"
+                      fill="#000" />
+                  </svg>
+                  <span class="visually-hidden">Поставить лайк фото.</span>
+                </button>
+                <p class="like__counter">254</p>
+              </div>
+
             </div>
           </li>
 
@@ -160,6 +181,7 @@
       </div>
       <img class="video__img" src="./images/catalog/video.jpg" width="280" height="177"
         alt="трасса в каньоне между гор.">
+      <button class="video__button" type="button"></button>
     </section>
 
   </main>
@@ -208,7 +230,7 @@
       </div>
 
       <div class="main-footer__create create">
-        <a class="create__link" href="https://htmlacademy.ru/">
+        <a class="create__link" href="https://htmlacademy.ru/https://htmlacademy.ru/intensive/adaptive">
           <svg aria-hidden="true" focusable="false" width="128" height="35" viewBox="0 0 128 35" fill="currentColor"
             xmlns="http://www.w3.org/2000/svg">
             <path
