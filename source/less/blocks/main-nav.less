@@ -3,11 +3,31 @@
   padding: 0;
 }
 
-.main-nav__toggle {
+.main-nav__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(5, 153px);
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(5, 239px);
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
   cursor: pointer;
   color: #80b2d1;
   border: none;
   background-color: #ffffff;
+  position: absolute;
+  z-index: 2;
+  top: 17px;
+  right: 18px;
 
   &:hover {
     color: fade(@color-blue, 60%);
@@ -22,21 +42,55 @@
   }
 }
 
-.main-nav__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.main-nav--opened .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--opened .main-nav__toggle--closed {
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 17px;
+  right: 18px;
+  z-index: 3;
+  display: block;
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 
   @media (min-width: @tablet-width) {
-    display: flex;
+    display: none;
   }
 }
 
-.main-nav--closed .main-nav__toggle {
+.main-nav--closed .main-nav__toggle--closed {
+  display: none;
+}
+
+.main-nav--closed .main-nav__item {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+.main-nav__button--current {
+  @media (min-width: @tablet-width) {
+    color: #766357;
+  }
+}
+
+.main-nav--opened .main-nav__wrapper {
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 2;
-  top: 17px;
-  right: 0;
 }
 
 .main-nav__link {
@@ -67,38 +121,26 @@
   padding-bottom: 12px;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
-
   @media (min-width: @tablet-width) {
     width: auto;
     background-color: transparent;
     box-shadow: none;
     padding-bottom: 17px;
     padding-top: 18px;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -1px;
   }
 }
 
-.main-nav__button-close {
-  background-image: url("./images/icon-close.svg");
-  width: 22px;
-  height: 22px;
-  border: none;
-  background-color: transparent;
-
-  &:hover {
-    opacity: 60%;
-  }
-
-  &:active {
-    opacity: 30%;
-  }
-
+.main-nav__item:nth-child(3) {
   @media (min-width: @tablet-width) {
-    display: none;
+    grid-column: 4;
   }
 }
 
-.main-nav__button--current {
+.main-nav__item:nth-child(4) {
   @media (min-width: @tablet-width) {
-    color: #766357;
+    grid-column: 5;
   }
 }

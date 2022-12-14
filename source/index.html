@@ -11,45 +11,51 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
-      <img src="./images/main-logo.svg" width="185" height="96" alt="Логотип Седона.">
+      <img class="main-header__img" src="./images/main-logo.svg" width="185" height="96" alt="Логотип Седона.">
     </a>
 
-    <nav class="main-nav main-nav--closed  main-nav--nojs">
+    <nav class="main-nav main-nav--opened  main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню.</span>
-        <svg aria-hidden="true" focusable="false" width="23" height="22"
-          viewBox="0 0 23 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <svg aria-hidden="true" focusable="false" width="23" height="22" viewBox="0 0 23 22" fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg">
           <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" />
         </svg>
       </button>
 
-      <button class="main-nav__button-close" type="button">
+      <button class="main-nav__toggle main-nav__toggle--closed" type="button">
+        <svg aria-hidden="true" focusable="false" width="23" height="23" viewBox="0 0 23 23" fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z" />
+        </svg>
         <span class="visually-hidden">Закрыть.</span>
       </button>
 
-      <ul class="main-nav__list">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
 
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__button main-nav__button--current button" href="index.html">Главаная
-          </a>
-        </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__button main-nav__button--current button" href="index.html">Главная
+            </a>
+          </li>
 
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__button button" href="catalog.html">Фото и видео
-          </a>
-        </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__button button" href="catalog.html">Фото и видео
+            </a>
+          </li>
 
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__button button" href="form.html"> Форма озыва
-          </a>
-        </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__button button" href="form.html"> Форма озыва
+            </a>
+          </li>
 
-        <li class="main-nav__item">
-          <a class="main-nav__link main-nav__button button" href="#">html academy
-          </a>
-        </li>
-      </ul>
-
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__button button" href="#">html academy
+            </a>
+          </li>
+        </ul>
+</div>
     </nav>
   </header>
 
@@ -158,8 +164,7 @@
     </section>
 
     <section class="map">
-      <img class="map__img" src="./images/map.jpg" width="320" height="350"
-        alt="Спутникова карта месторасположение города Седоны.">
+
     </section>
 
   </main>
@@ -220,6 +225,8 @@
 
     </div>
   </footer>
+
+  <script src="../script.js"></script>
 
 </body>
 
