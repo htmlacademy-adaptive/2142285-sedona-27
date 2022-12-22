@@ -1,5 +1,22 @@
 .impress {
-  margin: 24px 20px 34px 20px;
+  padding: 31px 20px 29px 20px;
+
+  @media (min-width: @desktop-width) {
+    padding: 47px 20px 50px 20px;
+  }
+}
+
+.impress::before {
+  content: "";
+  width: 320px;
+  position: absolute;
+  border-bottom: 1px solid #d6d6d6;
+  right: -20px;
+  top: -51px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .impress__list {
@@ -23,6 +40,53 @@
   padding-left: 82px;
 }
 
-.impress__titel {
-  padding-bottom: 30px;
+.impress__title {
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.impress__title::before {
+  @media (min-width: @tablet-width) {
+    .title--before();
+    bottom: 24px;
+    left: -208px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 280px;
+    left: -362px;
+  }
+}
+
+.impress__title::after {
+  @media (min-width: @tablet-width) {
+    .title--after();
+    bottom: 24px;
+    right: -169px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 280px;
+    right: -352px;
+  }
+}
+
+.control {
+  position: relative;
+}
+
+.control__input[type="radio"]:checked + .control__circle {
+  background-image: url("../images/catalog/mark-circle.svg");
+  background-repeat: no-repeat;
+  background-position: top 15px right 15px;
+}
+
+.control__circle {
+  position: absolute;
+  top: -12px;
+  left: -68px;
+  width: 46px;
+  height: 46px;
+  background: #f2f2f2;
+  border-radius: 50%;
 }

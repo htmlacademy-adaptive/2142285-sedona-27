@@ -1,21 +1,27 @@
 .emotions {
-  padding: 24px 20px 56px 20px;
+  padding: 24px 20px 1px 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 73px 0 48px 0;
+    padding: 31px 0 48px 0;
   }
 }
 
-.emotions__titel {
-  text-align: center;
+.emotions::before {
+  .form__group--before ();
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .emotions-field {
   width: 279px;
   height: 150px;
+  box-sizing: border-box;
   background: #f2f2f2;
   border: none;
   padding: 16px;
+  resize: none;
 
   @media (min-width: @tablet-width) {
     width: 648px;
@@ -27,5 +33,35 @@
     width: 768px;
     margin-left: 96px;
     margin-right: 96px;
+  }
+}
+
+.emotions__title {
+  position: relative;
+}
+
+.emotions__title::before {
+  @media (min-width: @tablet-width) {
+    .title--before();
+    bottom: 18px;
+    left: -198px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 280px;
+    left: -352px;
+  }
+}
+
+.emotions__title::after {
+  @media (min-width: @tablet-width) {
+    .title--after();
+    bottom: 18px;
+    right: -198px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 280px;
+    right: -352px;
   }
 }
