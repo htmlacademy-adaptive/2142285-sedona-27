@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/2142285-sedona-27/6/">
+</head>
+
+<body class="page__body">
+
+  <header class="main-header">
+    <a class="main-header__logo" href="index.html">
+      <img src="./images/main-logo.svg" width="185" height="96" alt="Логотип Седона.">
+    </a>
+
+    <nav class="main-nav main-nav--closed  main-nav--nojs">
+      <button class="main-nav__toggle main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть или закрыть меню.</span>
+        <svg aria-hidden="true" focusable="false" width="23" height="22" viewBox="0 0 23 22" fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" />
+        </svg>
+      </button>
+
+
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__button button" href="index.html">Главная
+            </a>
+          </li>
+
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__button button" href="catalog.html">Фото и видео
+            </a>
+          </li>
+
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__button main-nav__button--current button" href="form.html"> Форма озыва
+            </a>
+          </li>
+
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__button button" href="#">html academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <h1 class="visually-hidden"> Отзывы о Седоне.</h1>
+
+    <section class="intro">
+      <div class="intro__background-image intro__background-image--catalog">
+        <img src="./images/intro/intro-catalog-welcom.svg" width="229" height="39"
+          alt="Добро пожаловать в великолепную Седону, потому что Гранд-Каньон отстой.">
+      </div>
+      <div class="intro__wrapper intro__wrapper--form">
+        <h2 class="intro__slogan intro__slogan--catalog">Оставьте свой отзыв</h2>
+        <p class="intro__description">Помогите нашим отелям стать лучше! оставьте отзыв о
+          них, а также о
+          посещенных вами достопримечательностях</p>
+      </div>
+    </section>
+
+    <section class="feedback">
+      <div class="feedback__wrapper">
+
+        <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="get">
+
+          <div class="form__infomation">
+
+            <fieldset class="form__group introduce">
+              <legend class="form__title">Представьтесь:</legend>
+
+              <p class="form__subtitel">
+                <label for="name">имя*:</label>
+                <input class="introduce-field field" id="name" type="text" name="name" placeholder="Имя" required>
+              </p>
+
+              <p class="form__subtitel">
+                <label for="surname">фамилия*:</label>
+                <input class="introduce-field field" id="surname" type="text" name="surname" placeholder="Фамилия"
+                  required>
+              </p>
+
+              <p class="form__subtitel">
+                <label for="patronymic">Отчество:</label>
+                <input class="introduce-field field" id="patronymic" type="text" name="patronymic"
+                  placeholder="Отчество">
+              </p>
+
+            </fieldset>
+
+            <fieldset class="form__group customer-contact">
+              <legend class="form__title">Контактная информация:</legend>
+
+              <p class="form__subtitel">
+                <label for="phone">Контактный телефон*:</label>
+                <input class="customer-contact-field field" id="phone" type="text" name="phone"
+                  placeholder="Введите телефон" required>
+                <svg class="customer-contact__icon customer-contact__icon--phone" aria-hidden="true" focusable="false"
+                  width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1C7.6 18 0 10.4 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8Z"
+                    fill="#010101" />
+                </svg>
+              </p>
+
+              <p class="form__subtitel">
+                <label for="email">Электронная почта*:</label>
+                <input class="customer-contact-field field" id="email" type="text" name="e-mail"
+                  placeholder="Введите e-mail" required>
+                <svg class="customer-contact__icon customer-contact__icon--email" aria-hidden="true" focusable="false"
+                  width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8 8c-.3 0-.5-.1-1-.3L0 4v7c0 .5.5 1 1 1h14c.5 0 1-.5 1-1V4L9 7.7c-.5.2-.7.3-1 .3Zm7-8H1C.5 0 0 .5 0 1v.8L8 6l8-4.2V1c0-.5-.5-1-1-1Z"
+                    fill="#000" />
+                </svg>
+
+              </p>
+            </fieldset>
+
+          </div>
+
+          <fieldset class="form__group impress">
+            <legend class="form__title impress__title">Вaше общее впечатление:</legend>
+
+            <ul class="impress__list">
+              <li class="impress__item">
+                <label class="impress__control control">
+                  <input class="control__input  visually-hidden" type="radio" name="positive" checked>
+                  <span class="control__circle"></span>
+                  <span class="control__label"> Скорее положительное </span>
+                </label>
+              </li>
+
+              <li class="impress__item">
+                <label class="impress__control control">
+                  <input class="control__input visually-hidden" type="radio" name="negative">
+                  <span class="control__circle"></span>
+                  <span class="control__label"> Скорее отрицательное </span>
+                </label>
+              </li>
+
+              <li class="impress__item">
+                <label class="impress__control control">
+                  <input class="control__input  visually-hidden" type="radio" name="doubt">
+                  <span class="control__circle"></span>
+                  <span class="control__label"> Затрудняюсь ответить </span>
+                </label>
+              </li>
+
+            </ul>
+          </fieldset>
+
+          <fieldset class="form__group attraction">
+            <legend class="form__title attraction__title">посещенные достопримечательности:</legend>
+
+            <ul class="attraction__list">
+
+              <li class="attraction__item">
+                <label class="attraction__control control">
+                  <input class="control__input visually-hidden" type="checkbox" name="devil-bridg" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label"> Мост Дьявола </span>
+                </label>
+              </li>
+
+              <li class="attraction__item">
+                <label class="attraction__control control">
+                  <input class="control__input visually-hidden" type="checkbox" name="mountain" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label"> Гора-Колокол </span>
+                </label>
+              </li>
+
+              <li class="attraction__item">
+                <label class="attraction__control control">
+                  <input class="control__input visually-hidden" type="checkbox" name="park" checked>
+                  <span class="control__mark"></span>
+                  <span class="control__label"> Слайд-парк </span>
+                </label>
+              </li>
+
+              <li class="attraction__item">
+                <label class="attraction__control control">
+                  <input class="control__input visually-hidden" type="checkbox" name="rocks">
+                  <span class="control__mark"></span>
+                  <span class="control__label"> Красные скалы </span>
+                </label>
+              </li>
+
+            </ul>
+          </fieldset>
+
+          <fieldset class="form__group emotions">
+            <legend class="form__title emotions__title">Опишите свои эмоции:</legend>
+
+            <label class="visually-hidden" for="emotions">Ваши эмоции.</label>
+            <textarea class="emotions-field field" id="emotions" name="emotions"
+              placeholder="Опишите подробно все свои восторги"></textarea>
+
+            <div class="form__wrape">
+              <button class="form__button button" type="submit">Отправить отзыв</button>
+
+              <small class="required-field">
+                * — обязательные поля
+              </small>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <a class="main-footer__site-sedona" href="#">#visitSEDONA
+      </a>
+
+      <div class="main-footer__social social">
+        <ul class="social__list">
+
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte button" href="https://vk.com/htmlacademy">
+              <svg aria-hidden="true" focusable="false" width="24" height="14" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M24.12 1.8c.16-.54 0-.94-.8-.94H20.7c-.67 0-.98.34-1.15.73 0 0-1.33 3.2-3.22 5.27-.61.6-.9.8-1.23.8-.16 0-.41-.2-.41-.75v-5.1c0-.66-.19-.95-.74-.95H9.82c-.42 0-.67.3-.67.59 0 .62.95.76 1.04 2.51v3.8c0 .83-.15.98-.48.98-.9 0-3.06-3.2-4.34-6.88-.25-.72-.5-1-1.18-1H1.57c-.75 0-.9.34-.9.73 0 .68.89 4.07 4.14 8.55 2.17 3.06 5.23 4.72 8 4.72 1.68 0 1.88-.37 1.88-1v-2.32c0-.74.16-.88.7-.88.38 0 1.05.19 2.6 1.66 1.79 1.75 2.08 2.54 3.08 2.54h2.63c.75 0 1.12-.37.9-1.1-.23-.72-1.08-1.77-2.2-3.02-.62-.71-1.54-1.48-1.82-1.86-.39-.5-.28-.71 0-1.15 0 0 3.2-4.42 3.54-5.93Z" />
+              </svg>
+              <span class="visually-hidden">ВКонтакте.</span>
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link social__link--telegram button" href="https://t.me/htmlacademy">
+              <svg aria-hidden="true" focusable="false" width="24" height="17" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16.79.96.84 7.1c-1.09.44-1.08 1.05-.2 1.32l4.1 1.28 9.47-5.98c.44-.27.85-.13.52.17l-7.68 6.93-.28 4.22c.41 0 .6-.2.83-.41l1.99-1.94 4.13 3.06c.77.42 1.31.2 1.5-.71l2.72-12.8c.28-1.1-.43-1.61-1.16-1.28Z" />
+              </svg>
+              <span class="visually-hidden">Телеграм.</span>
+            </a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link social__link--youtube button" href="https://www.youtube.com/user/htmlacademyru">
+              <svg aria-hidden="true" focusable="false" width="22" height="17" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18.94.36H3.51C1.65.36.33 1.95.33 3.76v10.09c0 1.91 1.32 3.5 3.18 3.5h15.65c1.64 0 3.17-1.59 3.17-3.4V3.76c-.22-1.8-1.53-3.4-3.39-3.4ZM7.99 12.89V4.82l7.34 4.04-7.34 4.03Z" />
+              </svg>
+              <span class="visually-hidden">Yuotube.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main-footer__create create">
+        <a class="create__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg aria-hidden="true" focusable="false" width="128" height="35" viewBox="0 0 128 35" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M1.49 12.85c.35-.09.74-.14 1.15-.17.4-.03.81-.04 1.21-.04.43 0 .87.04 1.3.12.45.09.86.24 1.22.47.37.22.66.53.89.92.23.4.35.9.35 1.5s-.11 1.1-.33 1.51c-.21.41-.5.75-.85 1-.35.26-.76.44-1.22.55-.45.12-.93.17-1.41.17H3.22l-.33-.03-.24-.02v3.72H1.5v-9.7Zm2.4.8-.7.01c-.23 0-.4.03-.54.07v4.06c.05.02.12.03.22.04.1 0 .21 0 .33.02h.54c.32 0 .63-.03.94-.09.32-.06.6-.18.85-.33.26-.16.46-.39.6-.68.17-.29.24-.65.24-1.1 0-.38-.07-.7-.22-.95a1.59 1.59 0 0 0-.57-.62c-.24-.16-.5-.27-.8-.34-.3-.06-.6-.1-.9-.1Zm9.2 6.18H9.46l-.98 2.72H7.34l3.71-9.95h.53l3.73 9.95h-1.22l-1-2.72Zm-3.24-1h2.88l-1.09-2.99-.35-1.48h-.01l-.35 1.51-1.08 2.96Zm7.52-.91v-.98h.52c.13 0 .25 0 .37-.02l.37-.01.29-.04c.24-.04.47-.1.69-.19.21-.09.4-.2.56-.35.15-.14.28-.3.37-.49a1.71 1.71 0 0 0-.01-1.39 1.54 1.54 0 0 0-1.06-.76 3.23 3.23 0 0 0-.76-.07c-.5 0-.93.04-1.29.11-.35.07-.64.15-.85.25l-.31-.92a7.3 7.3 0 0 1 2.65-.48c.37 0 .73.04 1.09.13.36.07.68.2.96.39.3.18.52.42.69.74.18.31.27.7.27 1.15 0 .47-.16.91-.47 1.34-.3.42-.77.73-1.38.91v.06c.66.1 1.18.34 1.57.74.38.4.57.94.57 1.61A2.84 2.84 0 0 1 21.06 22c-.33.25-.73.44-1.17.56-.44.11-.9.17-1.35.17-.61 0-1.12-.04-1.52-.11-.4-.07-.72-.15-.98-.26l.29-1.05c.21.1.51.2.9.27s.86.11 1.41.11c.29 0 .57-.04.85-.11.28-.08.53-.2.75-.36.22-.17.4-.38.53-.62.14-.24.2-.53.2-.87 0-.59-.2-1.02-.6-1.29a3.22 3.22 0 0 0-1.62-.49 3.9 3.9 0 0 0-.32-.01l-.3-.01h-.76Zm6.81-5.07c.36-.09.74-.14 1.15-.17.41-.03.82-.04 1.22-.04.43 0 .86.04 1.3.12.45.09.86.24 1.22.47.36.22.66.53.88.92.24.4.35.9.35 1.5s-.1 1.1-.32 1.51c-.21.41-.5.75-.85 1-.36.26-.76.44-1.22.55-.46.12-.93.17-1.42.17H25.92l-.34-.03-.23-.02v3.72h-1.17v-9.7Zm2.4.8-.7.01c-.23 0-.4.03-.53.07v4.06c.04.02.12.03.22.04.1 0 .21 0 .32.02h.55c.32 0 .63-.03.94-.09.31-.06.6-.18.85-.33.25-.16.45-.39.6-.68.16-.29.24-.65.24-1.1 0-.38-.07-.7-.22-.95a1.59 1.59 0 0 0-.58-.62c-.23-.16-.5-.27-.8-.34-.3-.06-.6-.1-.9-.1Zm9.2 6.18h-3.61l-.98 2.72h-1.15l3.7-9.95h.54L38 22.55H36.8l-1.01-2.72Zm-3.24-1h2.89l-1.1-2.99-.34-1.48h-.02l-.35 1.51-1.08 2.96Zm6.77-6.08h5.32v1.04h-4.16v2.94a11.05 11.05 0 0 1 1.26-.13c.47 0 .93.05 1.36.14.42.08.8.23 1.13.45.33.21.58.5.77.88.2.36.3.83.3 1.39 0 .56-.1 1.04-.3 1.45a2.86 2.86 0 0 1-1.93 1.57 4.97 4.97 0 0 1-1.9.17 7.6 7.6 0 0 1-1.28-.1 3.5 3.5 0 0 1-.57-.1v-9.7Zm2.53 8.9c.3 0 .58-.04.85-.12.27-.09.5-.2.7-.37.2-.16.37-.37.48-.63.12-.25.18-.54.18-.88 0-.43-.07-.77-.2-1.03-.14-.27-.32-.48-.54-.63a1.93 1.93 0 0 0-.78-.3 4.78 4.78 0 0 0-1.2-.07l-.34.03c-.12 0-.22.02-.31.04l-.21.03v3.85a48.83 48.83 0 0 0 1 .08h.37Zm4.76-4c0-1.63.34-2.88 1.03-3.75a3.54 3.54 0 0 1 2.96-1.32c.69 0 1.28.12 1.79.37.5.24.92.58 1.24 1.03.34.44.59.97.75 1.6.16.61.23 1.3.23 2.07 0 1.63-.35 2.89-1.05 3.77-.69.86-1.68 1.3-2.96 1.3-.68 0-1.28-.12-1.78-.37-.5-.24-.91-.58-1.25-1.02a4.64 4.64 0 0 1-.73-1.6 8.48 8.48 0 0 1-.23-2.08Zm1.23 0c0 .54.05 1.05.15 1.54.11.49.28.91.5 1.29.23.36.52.66.86.88.36.21.77.32 1.25.32.86 0 1.55-.32 2.04-.98.5-.66.74-1.68.74-3.05 0-.53-.05-1.04-.17-1.53a3.8 3.8 0 0 0-.5-1.28 2.54 2.54 0 0 0-.87-.89 2.24 2.24 0 0 0-1.24-.33 2.4 2.4 0 0 0-2.03 1c-.49.65-.73 1.66-.73 3.03Zm14.4-3.86h-3.05v8.76h-1.16v-8.76h-3.06v-1.04h7.27v1.04Zm5.16 6.04h-3.61l-.98 2.72h-1.15l3.7-9.95h.54l3.72 9.95H68.4l-1.01-2.72Zm-3.24-1h2.89l-1.1-2.99-.34-1.48h-.02l-.35 1.51-1.08 2.96Zm12.63-.77h-4.7v4.49H70.9v-9.8h1.17v4.27h4.7v-4.27h1.16v9.8h-1.16v-4.5Zm3.13-.41c0-1.63.35-2.88 1.04-3.75a3.54 3.54 0 0 1 2.95-1.32c.7 0 1.3.12 1.8.37.5.24.92.58 1.24 1.03.34.44.59.97.74 1.6.16.61.24 1.3.24 2.07 0 1.63-.35 2.89-1.05 3.77-.69.86-1.68 1.3-2.97 1.3-.68 0-1.27-.12-1.77-.37-.5-.24-.91-.58-1.25-1.02a4.64 4.64 0 0 1-.73-1.6 8.48 8.48 0 0 1-.24-2.08Zm1.24 0c0 .54.05 1.05.15 1.54.11.49.28.91.5 1.29.23.36.51.66.86.88.35.21.77.32 1.24.32.87 0 1.55-.32 2.05-.98.5-.66.74-1.68.74-3.05 0-.53-.06-1.04-.17-1.53a3.8 3.8 0 0 0-.5-1.28 2.54 2.54 0 0 0-.87-.89 2.24 2.24 0 0 0-1.25-.33 2.4 2.4 0 0 0-2.03 1c-.48.65-.72 1.66-.72 3.03ZM114.6 0h-.1L101 1.4v24.7l13.5 8 13.4-8V1.4L114.6 0ZM126 12.1l-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2L126 3.1v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z" />
+          </svg>
+          <span class="visually-hidden">Разаботано .html academy.</span>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <section class="modal">
+    <div class="modal__error modal__error--close">
+      <div class="modal__error modal__auth">
+        <div class="modal__text">
+          <h2 class="modal__title">Что-то пошло не так!</h2>
+          <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+          </p>
+        </div>
+        <button class="modal__error-button button">ок</button>
+      </div>
+    </div>
+
+    <div class="modal__accepted modal__accepted--close">
+      <div class="modal__accepted modal__auth">
+        <div class="modal__text">
+          <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+          <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее
+            время мы опубликуем его на сайте.</p>
+        </div>
+        <button class="modal__accepted--button button">Закрыть окно</button>
+      </div>
+    </div>
+  </section>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
