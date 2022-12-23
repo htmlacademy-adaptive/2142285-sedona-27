@@ -50,14 +50,13 @@
   padding-top: 52px;
 
   @media (min-width: @tablet-width) {
-    height: 244px;
-    padding-top: 77px;
+    height: 289px;
     margin: 0;
     background: url("../images/intro/intro-triangle-up.svg") no-repeat bottom, url("../images/intro/back-mobile.jpg") right bottom no-repeat;
   }
 
   @media (min-width: @desktop-width) {
-    height: 244px;
+    height: 300px;
     margin: 0;
     background: url("../images/intro/intro-triangle-up-desktop.svg") no-repeat bottom, url("../images/intro/back-mobile.jpg") right bottom no-repeat;
   }
@@ -65,7 +64,7 @@
 
 .intro__wrapper {
   padding-left: 18px;
-  padding-bottom: 28px;
+  padding-bottom: 16px;
   padding-top: 32px;
   padding-right: 18px;
 
@@ -78,15 +77,47 @@
   }
 }
 
+.intro__wrapper--catalog {
+  @media (min-width: @tablet-width) {
+    padding: 67px 155px 82px 155px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 100px 320px 89px 320px;
+  }
+}
+
+.intro__wrapper--form {
+  padding: 34px 16px 41px 18px;
+
+  @media (min-width: @tablet-width) {
+    padding: 67px 155px 96px 155px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 112px 320px 70px 320px;
+  }
+}
+
 .intro__slogan {
   font-style: normal;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.intro__slogan--catalog {
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .intro__description {
@@ -101,5 +132,6 @@
 }
 
 .intro__description--catalog {
-  font-size: 12px;
+  font-size: 18px;
+  line-height: 26px;
 }

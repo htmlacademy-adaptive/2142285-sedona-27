@@ -1,12 +1,29 @@
 .attraction {
   @media (min-width: @desktop-width) {
-    margin: 24px 20px 34px 20px;
+    padding: 24px 20px 34px 20px;
+  }
+}
+
+.attraction::before {
+  content: "";
+  width: 320px;
+  position: absolute;
+  border-bottom: 1px solid #d6d6d6;
+  right: -20px;
+  top: -106px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
 .attraction__item {
-  padding-bottom: 36px;
+  padding-bottom: 40px;
   padding-left: 82px;
+}
+
+.attraction__item:last-child {
+  padding-bottom: 61px;
 }
 
 .attraction__list {
@@ -25,6 +42,54 @@
   }
 }
 
-.attraction__titel {
-  padding-bottom: 59px;
+.attraction__title {
+  padding-bottom: 39px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 140px 39px 140px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 360px 39px 318px;
+  }
+}
+
+.attraction__title::before {
+  @media (min-width: @tablet-width) {
+    .title--before();
+    bottom: 66px;
+    left: -1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 280px;
+  }
+}
+
+.attraction__title::after {
+  @media (min-width: @tablet-width) {
+    .title--after();
+    bottom: 66px;
+    right: -1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 280px;
+  }
+}
+
+.control__input[type="checkbox"]:checked + .control__mark {
+  background-image: url("../images/catalog/mark.svg");
+  background-repeat: no-repeat;
+  background-position: top 17px right 5px;
+}
+
+.control__mark {
+  position: absolute;
+  top: -12px;
+  left: -68px;
+  width: 46px;
+  height: 46px;
+  background: #f2f2f2;
 }

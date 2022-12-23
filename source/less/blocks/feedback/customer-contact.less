@@ -1,8 +1,20 @@
 .customer-contact {
-  padding: 24px 20px 34px 20px;
+  padding: 22px 20px 39px 20px;
 
   @media (min-width: @tablet-width) {
     padding: 28px 0 0 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 28px 0 0 63px;
+  }
+}
+
+.customer-contact::before {
+  .form__group--before ();
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
@@ -12,9 +24,33 @@
   background: #f2f2f2;
   border: none;
   margin-bottom: 16px;
+  position: relative;
+  padding: 16px 63px 16px 16px;
+  box-sizing: border-box;
 
   @media (min-width: @desktop-width) {
-    width: 340px;
-    padding-left: 24px;
+    width: 345px;
+  }
+}
+
+.customer-contact__icon--phone {
+  position: absolute;
+  right: 21px;
+  background: #e6e6e6;
+  padding: 20px;
+
+  @media (min-width: @tablet-width) {
+    right: 0;
+  }
+}
+
+.customer-contact__icon--email {
+  position: absolute;
+  right: 21px;
+  background: #e6e6e6;
+  padding: 23px 21px;
+
+  @media (min-width: @tablet-width) {
+    right: 0;
   }
 }
