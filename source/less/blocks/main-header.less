@@ -1,7 +1,6 @@
 .main-header {
   background-color: #ffffff;
   width: 320px;
-  min-height: 56px;
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
@@ -25,6 +24,7 @@
   padding-left: 47px;
   padding-right: 25px;
   margin-bottom: -40px;
+  z-index: 2;
 
   @media (min-width: @tablet-width) {
     position: absolute;
@@ -35,26 +35,3 @@
 .main-header__img {
   display: block;
 }
-
-/*
-.main-header::before {
-  content: "";
-  position: absolute;
-  z-index: 3;
-  width: 3500px;
-  border-bottom: 1px solid #f59393;
-  transform-origin: left;
-  transform: rotate(90deg);
-}
-
-.main-header::after {
-  content: "";
-  position: absolute;
-  z-index: 4;
-  width: 3500px;
-  border-bottom: 1px solid #f59393;
-  transform-origin: right;
-  transform: rotate(270deg);
-  margin-left: 182px;
-}
-*/
