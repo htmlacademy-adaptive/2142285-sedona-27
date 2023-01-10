@@ -1,8 +1,12 @@
 .impress {
-  padding: 31px 20px 29px 20px;
+  padding: 12px 20px 44px 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 19px 20px 44px 20px;
+  }
 
   @media (min-width: @desktop-width) {
-    padding: 47px 20px 50px 20px;
+    padding: 25px 53px 69px 53px;
   }
 }
 
@@ -11,8 +15,8 @@
   width: 320px;
   position: absolute;
   border-bottom: 1px solid #d6d6d6;
-  right: -20px;
-  top: -51px;
+  right: -1px;
+  top: -62px;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -26,48 +30,70 @@
 
   @media (min-width: @tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 323px);
+    grid-template-columns: repeat(2, 274px);
+    column-gap: 18px;
   }
 
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: repeat(3, 320px);
+    grid-template-columns: repeat(3, 259px);
+    gap: 47px;
   }
 }
 
 .impress__item {
-  padding-bottom: 36px;
-  padding-left: 82px;
+  padding-bottom: 19px;
+  padding-left: 63px;
+  padding-top: 21px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 19px;
+    padding-left: 81px;
+    padding-top: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 19px;
+    padding-left: 67px;
+    padding-top: 22px;
+  }
 }
 
+
 .impress__title {
-  padding-bottom: 10px;
-  position: relative;
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 10px;
+    padding-right: 10px;
+  }
 }
 
 .impress__title::before {
   @media (min-width: @tablet-width) {
     .title--before();
-    bottom: 24px;
-    left: -208px;
+    bottom: 13px;
+    left: -188px;
   }
 
   @media (min-width: @desktop-width) {
     width: 280px;
-    left: -362px;
+    left: -346px;
   }
 }
 
 .impress__title::after {
   @media (min-width: @tablet-width) {
     .title--after();
-    bottom: 24px;
-    right: -169px;
+    bottom: 13px;
+    right: -188px;
   }
 
   @media (min-width: @desktop-width) {
     width: 280px;
-    right: -352px;
+    right: -322px;
   }
 }
 
@@ -78,15 +104,31 @@
 .control__input[type="radio"]:checked + .control__circle {
   background-image: url("../images/catalog/mark-circle.svg");
   background-repeat: no-repeat;
-  background-position: top 15px right 15px;
+  background-position: top 17px right 15px;
 }
 
 .control__circle {
   position: absolute;
-  top: -12px;
-  left: -68px;
+  top: -14px;
+  left: -64px;
   width: 46px;
   height: 46px;
   background: #f2f2f2;
   border-radius: 50%;
+}
+
+.control__input + .control__circle {
+  &:hover {
+    color: #333333;
+  }
+
+  &:active {
+    color: fade(#333333, 30%);
+    background-color: rgb(213, 213, 213);
+  }
+}
+
+
+.control__label {
+  font-weight: 700;
 }
