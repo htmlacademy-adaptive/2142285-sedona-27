@@ -37,7 +37,7 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: repeat(3, 259px);
-    gap: 47px;
+    gap: 49px;
   }
 }
 
@@ -54,11 +54,10 @@
 
   @media (min-width: @desktop-width) {
     padding-bottom: 19px;
-    padding-left: 67px;
+    padding-left: 62px;
     padding-top: 22px;
   }
 }
-
 
 .impress__title {
   @media (min-width: @tablet-width) {
@@ -67,7 +66,7 @@
 
   @media (min-width: @desktop-width) {
     padding-bottom: 10px;
-    padding-right: 10px;
+    padding-right: 18px;
   }
 }
 
@@ -81,6 +80,7 @@
   @media (min-width: @desktop-width) {
     width: 280px;
     left: -346px;
+    bottom: 22px;
   }
 }
 
@@ -94,20 +94,16 @@
   @media (min-width: @desktop-width) {
     width: 280px;
     right: -322px;
+    bottom: 22px;
   }
 }
 
-.control {
+.impress__control {
   position: relative;
 }
 
-.control__input[type="radio"]:checked + .control__circle {
-  background-image: url("../images/catalog/mark-circle.svg");
-  background-repeat: no-repeat;
-  background-position: top 17px right 15px;
-}
-
 .control__circle {
+  content: "";
   position: absolute;
   top: -14px;
   left: -64px;
@@ -117,14 +113,36 @@
   border-radius: 50%;
 }
 
-.control__input + .control__circle {
-  &:hover {
-    color: #333333;
-  }
+.control__input:checked + .control__circle {
+  background: #f2f2f2;
+  background-image: url("../images/form/mark-circle.svg");
+  background-repeat: no-repeat;
+  background-position: top 16px right 14px;
 
-  &:active {
-    color: fade(#333333, 30%);
-    background-color: rgb(213, 213, 213);
+  @media (min-width: @desktop-width) {
+    background-position: top 18px right 13px;
+  }
+}
+
+.control__input:checked:hover + .control__circle {
+  background: #e5e5e5;
+  background-image: url("../images/form/mark-circle.svg");
+  background-repeat: no-repeat;
+  background-position: top 16px right 14px;
+
+  @media (min-width: @desktop-width) {
+    background-position: top 18px right 13px;
+  }
+}
+
+.control__input:checked:active + .control__circle {
+  background: #d5d5d5;
+  background-image: url("../images/form/mark-circle-checked.svg");
+  background-repeat: no-repeat;
+  background-position: top 16px right 14px;
+
+  @media (min-width: @desktop-width) {
+    background-position: top 18px right 13px;
   }
 }
 

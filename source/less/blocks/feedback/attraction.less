@@ -1,12 +1,12 @@
 .attraction {
-  padding-bottom: 44px;
+  padding-bottom: 41px;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 35px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 24px 43px 141px 43px;
+    padding: 34px 43px 81px 34px;
   }
 }
 
@@ -16,7 +16,7 @@
   position: absolute;
   border-bottom: 1px solid #d6d6d6;
   right: -1px;
-  top: -117px;
+  top: -89px;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -26,7 +26,7 @@
 .attraction__item {
   padding-left: 82px;
   padding-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 21px;
 }
 
 .attraction__item:nth-child(even) {
@@ -39,7 +39,7 @@
   @media (min-width: @desktop-width) {
     padding-bottom: 20px;
     padding-top: 20px;
-    padding-left: 72px;
+    padding-left: 78px;
   }
 }
 
@@ -54,6 +54,18 @@
     padding-bottom: 20px;
     padding-top: 20px;
     padding-left: 72px;
+  }
+}
+
+.attraction__item:nth-child(3) {
+  @media (min-width: @desktop-width) {
+    padding-left: 78px;
+  }
+}
+
+.attraction__item:nth-child(4) {
+  @media (min-width: @desktop-width) {
+    padding-left: 63px;
   }
 }
 
@@ -80,11 +92,11 @@
   position: relative;
 
   @media (min-width: @tablet-width) {
-    padding: 0 140px 22px 140px;
+    padding: 0 140px 19px 140px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 360px 27px 302px;
+    padding: 0 360px 17px 308px;
   }
 }
 
@@ -97,6 +109,8 @@
 
   @media (min-width: @desktop-width) {
     width: 280px;
+    bottom: 43px;
+    left: -35px;
   }
 }
 
@@ -109,13 +123,13 @@
 
   @media (min-width: @desktop-width) {
     width: 280px;
+    bottom: 43px;
+    right: 17px;
   }
 }
 
-.control__input[type="checkbox"]:checked + .control__mark {
-  background-image: url("../images/catalog/mark.svg");
-  background-repeat: no-repeat;
-  background-position: top 14px right 12px;
+.attraction__control {
+  position: relative;
 }
 
 .control__mark {
@@ -127,13 +141,23 @@
   background: #f2f2f2;
 }
 
-.control__input + .control__mark {
-  &:hover {
-    color: #333333;
-  }
+.control__input:checked + .control__mark {
+  background: #f2f2f2;
+  background-image: url("../images/form/mark.svg");
+  background-repeat: no-repeat;
+  background-position: top 14px right 12px;
+}
 
-  &:active {
-    color: fade(#333333, 30%);
-    background-color: rgb(213, 213, 213);
-  }
+.control__input:checked:hover + .control__mark {
+  background: #e5e5e5;
+  background-image: url("../images/form/mark.svg");
+  background-repeat: no-repeat;
+  background-position: top 14px right 12px;
+}
+
+.control__input:checked:active + .control__mark {
+  background: #d5d5d5;
+  background-image: url("../images/form/mark-cheked.svg");
+  background-repeat: no-repeat;
+  background-position: top 14px right 12px;
 }
