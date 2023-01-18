@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="favicon.ico">
   <link rel="icon" href="./images/favicon32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./images/favicon180.svg">
-  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -16,8 +16,12 @@
 
   <svg style="display: none;">
 
-    <symbol viewBox="0 0 23 22" id="icon-menu" xmlns="http://www.w3.org/2000/svg">
+    <symbol viewBox="0 0 23 22" id="icon-open" xmlns="http://www.w3.org/2000/svg">
       <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" />
+    </symbol>
+
+    <symbol viewBox="0 0 23 23" id="icon-close" xmlns="http://www.w3.org/2000/svg">
+      <path d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z"/>
     </symbol>
 
     <symbol id="vkontakte" xmlns="http://www.w3.org/2000/svg">
@@ -59,15 +63,15 @@
     </a>
 
     <nav class="main-nav main-nav--closed  main-nav--nojs">
+      <div class="main-nav__wrapper">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть или закрыть меню.</span>
         <svg aria-hidden="true" focusable="false" width="23" height="22" fill="currentColor">
-          <use xlink:href="#icon-menu"></use>
+          <use class="main-nav__icon-open" xlink:href="#icon-open"></use>
+          <use class="main-nav__icon-close" xlink:href="#icon-close"></use>
         </svg>
       </button>
 
-
-      <div class="main-nav__wrapper">
         <ul class="main-nav__list">
 
           <li class="main-nav__item">
@@ -81,12 +85,12 @@
           </li>
 
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__button button" href="form.html"> Форма озыва
+            <a class="main-nav__link main-nav__button button" href="form.html"> Форма отзыва
             </a>
           </li>
 
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__button button" href="#">html academy
+            <a class="main-nav__link main-nav__button button" href="https://htmlacademy.ru">html academy
             </a>
           </li>
         </ul>
@@ -121,15 +125,18 @@
         <ul class="photo__list">
 
           <li class="photo__item">
+<a href="#">
             <picture>
               <source media="(min-width: 1200px)"
                 srcset="./images/catalog/photo-1-desktop.jpg 1x, ./images/catalog/photo-1-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
                 srcset="./images/catalog/photo-1-tablet.jpg 1x, ./images/catalog/photo-1-tablet@2x.jpg 2x">
+
               <img class="photo__img photo__img--first" src="./images/catalog/photo-1-mobile.jpg" width="280"
-                height="280" srcset="./images/catalog/photo-1-mobile@2x.jpg 2x" alt="дорога на в пустыне на закате">
+                height="280" srcset="./images/catalog/photo-1-mobile@2x.jpg 2x" alt="дорога на в пустыне на закате.">
             </picture>
-            <div class="photo__contaiter">
+          </a>
+            <div class="photo__container">
               <div class="photo__text">
                 <h3 class="photo__title"> неродные просторы </h3>
                 <p class="photo__author"> Автор фото: Борис</p>
@@ -147,15 +154,17 @@
           </li>
 
           <li class="photo__item">
+            <a href="#">
             <picture>
               <source media="(min-width: 1200px)"
                 srcset="./images/catalog/photo-2-desktop.jpg 1x, ./images/catalog/photo-2-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
                 srcset="./images/catalog/photo-2-tablet.jpg 1x, ./images/catalog/photo-2-tablet@2x.jpg 2x">
               <img class="photo__img" src="./images/catalog/photo-2-mobile.jpg" width="280" height="280"
-                srcset="./images/catalog/photo-2-mobile@2x.jpg 2x" alt="дорога на в пустыне на закате">
+                srcset="./images/catalog/photo-2-mobile@2x.jpg 2x" alt="кактус на фоне гор.">
             </picture>
-            <div class="photo__contaiter">
+            </a>
+            <div class="photo__container">
               <div class="photo__text">
                 <h3 class="photo__title"> Местная растительность </h3>
                 <p class="photo__author"> Автор фото: Сергей</p>
@@ -173,15 +182,17 @@
           </li>
 
           <li class="photo__item">
+            <a href="#">
             <picture>
               <source media="(min-width: 1200px)"
                 srcset="./images/catalog/photo-3-desktop.jpg 1x, ./images/catalog/photo-3-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
                 srcset="./images/catalog/photo-3-tablet.jpg 1x, ./images/catalog/photo-3-tablet@2x.jpg 2x">
               <img class="photo__img" src="./images/catalog/photo-3-mobile.jpg" width="280" height="280"
-                srcset="./images/catalog/photo-3-mobile@2x.jpg 2x" alt="дорога на в пустыне на закате">
+                srcset="./images/catalog/photo-3-mobile@2x.jpg 2x" alt="дорога в лесу.">
             </picture>
-            <div class="photo__contaiter">
+            </a>
+            <div class="photo__container">
               <div class="photo__text">
                 <h3 class="photo__title"> Дорога на север </h3>
                 <p class="photo__author"> Автор фото: Петр</p>
@@ -199,15 +210,17 @@
           </li>
 
           <li class="photo__item">
+            <a href="#">
             <picture>
               <source media="(min-width: 1200px)"
                 srcset="./images/catalog/photo-4-desktop.jpg 1x, ./images/catalog/photo-4-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
                 srcset="./images/catalog/photo-4-tablet.jpg 1x, ./images/catalog/photo-4-tablet@2x.jpg 2x">
               <img class="photo__img" src="./images/catalog/photo-4-mobile.jpg" width="280" height="280"
-                srcset="./images/catalog/photo-4-mobile@2x.jpg" alt="дорога на в пустыне на закате">
+                srcset="./images/catalog/photo-4-mobile@2x.jpg" alt="мост дьявола.">
             </picture>
-            <div class="photo__contaiter">
+            </a>
+            <div class="photo__container">
               <div class="photo__text">
                 <h3 class="photo__title"> Мост дьявола </h3>
                 <p class="photo__author"> Автор фото: Антон</p>
@@ -255,7 +268,7 @@
       </a>
 
       <div class="main-footer__social social">
-        <ul class="social__list">
+        <ul class="social__list social__list--catalog">
 
           <li class="social__item">
             <a class="social__link social__link--vkontakte button" href="https://vk.com/htmlacademy">
@@ -286,7 +299,7 @@
         </ul>
       </div>
 
-      <div class="main-footer__create create">
+      <div class="main-footer__create create create--catalog">
         <a class="create__link" href="https://htmlacademy.ru/https://htmlacademy.ru/intensive/adaptive">
           <svg aria-hidden="true" focusable="false" width="128" height="35" fill="currentColor">
             <use xlink:href="#htmlacademy"></use>

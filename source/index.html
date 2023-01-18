@@ -15,8 +15,12 @@
 <body class="page__body">
   <svg style="display: none;">
 
-    <symbol viewBox="0 0 23 22" id="icon-menu" xmlns="http://www.w3.org/2000/svg">
+    <symbol viewBox="0 0 23 22" id="icon-open" xmlns="http://www.w3.org/2000/svg">
       <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" />
+    </symbol>
+
+    <symbol viewBox="0 0 23 23" id="icon-close" xmlns="http://www.w3.org/2000/svg">
+      <path d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z" />
     </symbol>
 
     <symbol id="vkontakte" xmlns="http://www.w3.org/2000/svg">
@@ -52,15 +56,15 @@
     </a>
 
     <nav class="main-nav main-nav--closed  main-nav--nojs">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть или закрыть меню.</span>
-        <svg aria-hidden="true" focusable="false" width="23" height="22" fill="currentColor">
-          <use xlink:href="#icon-menu"></use>
-        </svg>
-      </button>
-
-
       <div class="main-nav__wrapper">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть или закрыть меню.</span>
+          <svg class="main-nav__icon" aria-hidden="true" focusable="false" width="23" height="22" fill="currentColor">
+            <use class="main-nav__icon-open" xlink:href="#icon-open"></use>
+            <use class="main-nav__icon-close" xlink:href="#icon-close"></use>
+          </svg>
+        </button>
+
         <ul class="main-nav__list">
 
           <li class="main-nav__item">
@@ -79,7 +83,7 @@
           </li>
 
           <li class="main-nav__item">
-            <a class="main-nav__link main-nav__button button" href="#">html academy
+            <a class="main-nav__link main-nav__button button" href="https://htmlacademy.ru/">html academy
             </a>
           </li>
         </ul>
@@ -141,28 +145,33 @@
             <li class="advantages__item advantages__item--house">
               <div class="advantages__text advantages__text--icon">
                 <h3 class="advantages__title advantages__title--icon">Жилье</h3>
-                <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <p class="advantages__description advantages__description--icon">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </div>
             </li>
 
             <li class="advantages__item advantages__item--food">
               <div class="advantages__text advantages__text--icon">
                 <h3 class="advantages__title advantages__title--icon">Еда</h3>
-                <p class="advantages__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="advantages__description advantages__description--icon">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </div>
             </li>
 
             <li class="advantages__item advantages__item--gift">
               <div class="advantages__text advantages__text--icon">
                 <h3 class="advantages__title advantages__title--icon">Сувениры</h3>
-                <p class="advantages__description">Не только китайского, но и местного производства!</p>
+                <p class="advantages__description advantages__description--icon">Не только китайского, <br> но и местного производства!</p>
               </div>
             </li>
           </ul>
         </li>
 
         <li class="advantages__item advantages__item--photo">
-          <div class="advantages__wrapper">
+          <div class="advantages__wrapper advantages__wrapper--photo">
+            <div class="advantages__text advantages__text--photo">
+              <h3 class="advantages__title">Там есть <br> Мост дьявола</h3>
+              <p class="advantages__number"> — №2 — </p>
+              <p class="advantages__description advantages__description--photo">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
             <picture>
               <source media="(min-width: 1200px)"
                 srcset="./images/advantage/photo-bridge-desktop.jpg 1x, ./images/advantage/photo-bridge-desktop@2x.jpg 2x">
@@ -171,35 +180,30 @@
               <img class="advantages__img" src="./images/advantage/photo-bridge-mobile.jpg" width="520" height="260"
                 srcset="./images/advantage/photo-bridge-mobile@2x.jpg" alt="Мост Дьявола.">
             </picture>
-            <div class="advantages__text advantages__text--photo">
-              <h3 class="advantages__title">Там есть Мост дьявола</h3>
-              <p class="advantages__number"> — №2 — </p>
-              <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            </div>
           </div>
         </li>
 
         <li class="advantages__item advantages__item--empty">
           <div class="advantages__text">
-            <h3 class="advantages__title">Небольшая площадь</h3>
+            <h3 class="advantages__title advantages__title--empty">Небольшая площадь</h3>
             <p class="advantages__number"> — №3 — </p>
-            <p class="advantages__description">Все интересные места находятся очень близко</p>
+            <p class="advantages__description advantages__description--icon">Все интересные места находятся очень близко</p>
           </div>
         </li>
 
         <li class="advantages__item advantages__item--empty">
-          <div class="advantages__text">
-            <h3 class="advantages__title">Красивая дорога</h3>
+          <div class="advantages__text advantages__text--empty ">
+            <h3 class="advantages__title advantages__title--empty advantages__title--empty-second">Красивая дорога</h3>
             <p class="advantages__number"> — №4 — </p>
-            <p class="advantages__description">ехать в Седону из Лас-Вегаса <br> совсем не скучно!</p>
+            <p class="advantages__description advantages__description--icon">ехать в Седону из Лас-Вегаса совсем <br> не скучно!</p>
           </div>
         </li>
 
         <li class="advantages__item advantages__item--empty">
           <div class="advantages__text">
-            <h3 class="advantages__title"> Мало туристов</h3>
+            <h3 class="advantages__title advantages__title--empty advantages__title--empty-second"> Мало туристов</h3>
             <p class="advantages__number"> — №5 — </p>
-            <p class="advantages__description">Большинство едет в гранд каньон <br> и толпится там</p>
+            <p class="advantages__description advantages__description--icon">Большинство едет в гранд каньон и толпится там</p>
           </div>
         </li>
 
@@ -210,11 +214,10 @@
     <section class="search">
       <div class="search__text">
         <h2 class="search__title">Заинтересовались?</h2>
-        <p class="search__descrition">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
-          гостиниц
-          в Cедоне</p>
+        <p class="search__descrition">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения
+          гостиниц в Cедоне</p>
       </div>
-      <a class="search__button button" href="#">Найти Гостиницу</a>
+      <a class="search__button button" href="serch.html">Найти Гостиницу</a>
 
     </section>
 

@@ -6,9 +6,28 @@
   gap: 6px;
   margin: 0;
   padding: 0 0 40px 0;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 10px;
+  }
 }
 
-.social__link {
-  padding: 15px 13px 15px 13px;
+.social__list--catalog {
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+.social__link--vkontakte {
+  padding: 13px 12px 15px 12px;
+  display: block;
+}
+
+.social__link--telegram {
+  padding: 15px 10px 13px 15px;
+  display: block;
+}
+
+.social__link--youtube {
+  padding: 15px 13px 13px 12px;
   display: block;
 }

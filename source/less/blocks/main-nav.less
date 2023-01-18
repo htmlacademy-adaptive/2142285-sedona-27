@@ -7,6 +7,17 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.main-nav--opened .main-nav__wrapper {
+  display: grid;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+}
+
+.main-nav--closed .main-nav__list {
+  display: none;
 
   @media (min-width: @tablet-width) {
     display: grid;
@@ -19,22 +30,22 @@
   }
 }
 
-.main-nav--closed .main-nav__toggle {
+.main-nav__toggle {
   cursor: pointer;
-  color: @color-blue;
   border: none;
   background-color: transparent;
   position: absolute;
   z-index: 2;
-  top: 15px;
+  justify-self: end;
+  top: 16px;
   right: 14px;
 
   &:hover {
-    color: fade(@color-blue, 60%);
+    opacity: 60%;
   }
 
   &:active {
-    color: fade(@color-blue, 30%);
+    opacity: 30%;
   }
 
   @media (min-width: @tablet-width) {
@@ -42,40 +53,28 @@
   }
 }
 
-.main-nav--opened .main-nav__toggle::before {
-  content: "";
-  z-index: 3;
-  background-image: url("../images/icon-close.svg");
-  background-repeat: no-repeat;
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  top: 16px;
-  right: 18px;
-
-  &:hover {
-    color: fade(#000000, 60%);
-  }
-
-  &:active {
-    color: fade(#000000, 30%);
-  }
+.main-nav__icon-open,
+.main-nav--opened .main-nav__icon-close {
+  display: block;
 }
 
-.main-nav--closed .main-nav__item {
-  @media (max-width: @mobile-width-only) {
-    display: none;
-  }
+.main-nav__icon-close,
+.main-nav--opened .main-nav__icon-open {
+  display: none;
 }
 
-.main-nav--opened .main-nav__wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
+.main-nav__icon-close {
+  color: #ffffff;
+}
+
+.main-nav__icon-open {
+  color: @color-blue;
 }
 
 .main-nav__link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
   text-decoration: none;
   font-family: inherit;
 
@@ -105,8 +104,12 @@
     width: auto;
     background-color: transparent;
     box-shadow: none;
-    padding-bottom: 17px;
-    padding-top: 18px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    margin-right: 20px;
+    margin-left: 20px;
     font-size: 14px;
     line-height: 21px;
 
