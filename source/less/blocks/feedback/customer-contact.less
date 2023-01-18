@@ -6,7 +6,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 28px 0 0 53px;
+    padding: 28px 0 0 50px;
   }
 }
 
@@ -24,7 +24,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 42px;
+    padding-left: 45px;
   }
 }
 
@@ -47,24 +47,38 @@
   }
 }
 
-.customer-contact__icon--phone {
+.form__label--customer-contact--phone::after {
   position: absolute;
-  right: 21px;
-  background: #e6e6e6;
-  padding: 20px;
+  content: url("../images/icon-phone.svg");
+  z-index: 3;
+  top: 60px;
+  right: 40px;
 
   @media (min-width: @tablet-width) {
-    right: 0;
+    top: 65px;
+    right: 19px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 68px;
+    right: 22px;
   }
 }
 
-.customer-contact__icon--email {
+.form__label--customer-contact--email::after {
   position: absolute;
-  right: 21px;
-  background: #e6e6e6;
-  padding: 23px 21px;
+  content: url("../images/icon-email.svg");
+  z-index: 3;
+  top: 155px;
+  right: 41px;
 
   @media (min-width: @tablet-width) {
-    right: 0;
+    top: 163px;
+    right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 163px;
+    right: 23px;
   }
 }
