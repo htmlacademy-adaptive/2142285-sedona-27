@@ -1,19 +1,35 @@
 .main-footer__wrapper {
-  padding: 30px 77px 22px 77px;
+  padding: 30px 82px 22px 82px;
   background-color: #ffffff;
 
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 76px 60px 36px 60px;
+    padding: 32px 60px 36px 60px;
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    padding: 51px 120px 10px 120px;
+    padding: 38px 120px 0 120px;
   }
 }
+
+.main-footer__wrapper--catalog {
+  @media (min-width: @tablet-width) {
+    padding-top: 77px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 51px;
+  }
+}
+
+.main-footer__wrapper--form {
+  @media (min-width: @desktop-width) {
+    padding: 50px 120px 0 120px;
+  }
+}
+
 
 .main-footer__site-sedona {
   font-family: inherit;

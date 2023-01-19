@@ -38,6 +38,10 @@
   @media (min-width: @tablet-width) {
     padding-left: 33px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 31px;
+  }
 }
 
 .feedback__wrapper {
@@ -55,6 +59,15 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+
+  &:hover {
+    background: #e5e5e5;
+  }
+
+  &:active {
+    background: #ffffff;
+    border: 4px solid #e5e5e5;
+  }
 }
 
 .form__infomation {
@@ -68,7 +81,7 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 493px 466px;
-    padding-bottom: 58px;
+    padding-bottom: 56px;
   }
 }
 
@@ -102,7 +115,7 @@
 
   @media (min-width: @desktop-width) {
     padding: 0 96px 0 96px;
-    margin-top: 39px;
+    margin-top: 41px;
   }
 }
 
@@ -112,7 +125,7 @@
 
   @media (min-width: @tablet-width) {
     width: 324px;
-    padding: 16px 30px 16px 30px;
+    padding: 22px 30px 16px 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -122,15 +135,12 @@
 }
 
 .required-field {
-  padding-left: 132px;
+  padding-left: 143px;
+  font-size: 12px;
+  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    padding-top: 19px;
-    font-size: 18px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-top: 22px;
-    font-size: 17px;
+    padding-top: 24px;
+    font-size: 14px;
   }
 }

@@ -20,7 +20,14 @@
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
-    padding-bottom: 20px;
+    padding-bottom: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -35,6 +42,20 @@
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
+    padding-bottom: 23px;
+  }
+}
+
+.advantages__title--empty {
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+  }
+}
+
+.advantages__title--empty-second {
+  @media (min-width: @desktop-width) {
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }
 
@@ -45,7 +66,15 @@
   line-height: 21px;
   text-transform: uppercase;
   margin: 0;
-  padding-bottom: 17px;
+  padding-bottom: 18px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 21px;
+  }
 }
 
 .advantages__description {
@@ -74,6 +103,12 @@
     display: flex;
     flex-wrap: wrap;
     background-color: @color-blue;
+  }
+}
+
+.advantages__wrapper--photo {
+  @media (min-width: @tablet-width) {
+    flex-direction: row-reverse;
   }
 }
 
@@ -109,35 +144,46 @@
 }
 
 .advantages__text {
-  padding-top: 25px;
+  padding-top: 23px;
   padding-bottom: 24px;
   text-align: center;
-  padding-left: 26px;
-  padding-right: 26px;
+  padding-left: 31px;
+  padding-right: 31px;
 
   @media (min-width: @tablet-width) {
-    padding: 52px 33px 52px 33px;
+    padding: 50px 33px 28px 33px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 63px 50px 41px 50px;
+    padding: 62px 55px 41px 55px;
+  }
+}
+
+.advantages__text--empty {
+  padding: 25px 32px 25px 32px;
+
+  @media (min-width: @tablet-width) {
+    padding: 38px 33px 42px 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 51px 60px 41px 60px;
   }
 }
 
 .advantages__text--triangle {
-  padding-bottom: 37px;
-  padding-top: 51px;
+  padding: 51px 15px 37px 15px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
     width: 256px;
-    padding: 52px 33px 31px 33px;
+    padding: 54px 33px 31px 33px;
     box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
     width: 400px;
-    padding: 52px 50px 51px 50px;
+    padding: 54px 55px 51px 55px;
   }
 }
 
@@ -146,13 +192,13 @@
 
   @media (min-width: @tablet-width) {
     width: 256px;
-    padding: 52px 33px 31px 33px;
+    padding: 54px 33px 31px 33px;
     box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
     width: 400px;
-    padding: 52px 50px 51px 50px;
+    padding: 52px 85px 51px 85px;
   }
 }
 
@@ -163,6 +209,11 @@
   @media (min-width: @tablet-width) {
     padding: 26px 0 0 0;
     text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 12px;
+    padding: 24px 0 0 0;
   }
 }
 

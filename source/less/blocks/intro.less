@@ -17,6 +17,7 @@
   @media (min-width: @tablet-width) {
     width: 768px;
     height: 518px;
+    padding-top: 76px;
     background-image: url("../images/intro/back-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -39,7 +40,6 @@
   content: url("../images/intro/intro-triangle-up.svg");
   bottom: -5px;
   left: -440px;
-  z-index: 2;
 
   @media (min-width: @tablet-width) {
     left: -216px;
@@ -66,6 +66,7 @@
   @media (min-width: @tablet-width) {
     height: 289px;
     background: url("../images/intro/back-catalog-tablet.jpg");
+    padding-top: 94px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../images/intro/back-catalog-tablet@2x.jpg");
@@ -76,6 +77,7 @@
 
   @media (min-width: @desktop-width) {
     height: 300px;
+    padding-top: 100px;
     background: url("../images/intro/back-catalog-desktop.jpg");
   }
 
@@ -86,39 +88,41 @@
 }
 
 .intro__wrapper {
-  padding-left: 18px;
+  padding-left: 15px;
   padding-bottom: 14px;
-  padding-top: 23px;
+  padding-top: 22px;
   padding-right: 18px;
 
   @media (min-width: @tablet-width) {
-    padding: 47px 110px 55px 110px;
+    padding: 38px 110px 55px 110px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 59px 320px 44px 320px;
+    padding: 49px 320px 44px 320px;
   }
 }
 
 .intro__wrapper--catalog {
+  padding: 26px 15px 14px 18px;
+
   @media (min-width: @tablet-width) {
-    padding: 67px 172px 82px 169px;
+    padding: 55px 172px 82px 169px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 100px 387px 89px 387px;
+    padding: 88px 387px 89px 387px;
   }
 }
 
 .intro__wrapper--form {
-  padding: 34px 16px 53px 18px;
+  padding: 28px 16px 53px 18px;
 
   @media (min-width: @tablet-width) {
-    padding: 65px 155px 108px 155px;
+    padding: 55px 160px 108px 165px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 114px 380px 68px 383px;
+    padding: 104px 380px 69px 380px;
   }
 }
 
@@ -160,11 +164,12 @@
 
   @media (min-width: @tablet-width) {
     font-size: 21px;
+    padding-bottom: 28px;
   }
 }
 
 .intro__slogan--catalog {
-  padding-bottom: 24px;
+  padding-bottom: 25px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
@@ -173,7 +178,7 @@
 }
 
 .intro__slogan--form {
-  padding-bottom: 26px;
+  padding-bottom: 22px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
@@ -198,12 +203,4 @@
   @media (min-width: @tablet-width) {
     font-size: 14px;
   }
-
-  @media (min-width: @desktop-width) {
-    font-size: 11px;
-  }
-}
-
-.intro__description--catalog {
-  font-size: 14px;
 }
