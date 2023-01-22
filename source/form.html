@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="./images/favicon32.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="./images/favicon180.svg">
+  <link rel="icon" href="./img/favicon32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicon180.svg">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -19,11 +19,9 @@
     <symbol viewBox="0 0 23 22" id="icon-open" xmlns="http://www.w3.org/2000/svg">
       <path d="M22.9 0H0v4h22.9V0ZM22.9 9H0v4h22.9V9ZM22.9 18H0v4h22.9v-4Z" />
     </symbol>
-
     <symbol viewBox="0 0 23 23" id="icon-close" xmlns="http://www.w3.org/2000/svg">
       <path d="M22.2 2.8 19.4 0l-8.3 8.3L2.8 0 0 2.8l8.3 8.3L0 19.4l2.8 2.8 8.3-8.3 8.3 8.3 2.8-2.8-8.3-8.3 8.3-8.3Z" />
     </symbol>
-
     <symbol id="vkontakte" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" clip-rule="evenodd"
         d="M24.12 1.8c.16-.54 0-.94-.8-.94H20.7c-.67 0-.98.34-1.15.73 0 0-1.33 3.2-3.22 5.27-.61.6-.9.8-1.23.8-.16 0-.41-.2-.41-.75v-5.1c0-.66-.19-.95-.74-.95H9.82c-.42 0-.67.3-.67.59 0 .62.95.76 1.04 2.51v3.8c0 .83-.15.98-.48.98-.9 0-3.06-3.2-4.34-6.88-.25-.72-.5-1-1.18-1H1.57c-.75 0-.9.34-.9.73 0 .68.89 4.07 4.14 8.55 2.17 3.06 5.23 4.72 8 4.72 1.68 0 1.88-.37 1.88-1v-2.32c0-.74.16-.88.7-.88.38 0 1.05.19 2.6 1.66 1.79 1.75 2.08 2.54 3.08 2.54h2.63c.75 0 1.12-.37.9-1.1-.23-.72-1.08-1.77-2.2-3.02-.62-.71-1.54-1.48-1.82-1.86-.39-.5-.28-.71 0-1.15 0 0 3.2-4.42 3.54-5.93Z" />
@@ -44,7 +42,7 @@
 
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
-      <img class="main-header__img" src="./images/main-logo.svg" width="185" height="96" alt="Логотип Седона.">
+      <img class="main-header__img" src="./img/main-logo.svg" width="185" height="96" alt="Логотип Седона.">
     </a>
 
     <nav class="main-nav main-nav--closed  main-nav--nojs">
@@ -86,15 +84,17 @@
   </header>
   <main class="main-container">
     <h1 class="visually-hidden"> Отзывы о Седоне.</h1>
+    
     <section class="intro">
-      <div class="intro__background-image intro__background-image--catalog">
+      <div class="intro__background-img intro__background-img--catalog">
         <picture>
-          <source media="(min-width: 1200px)" srcset="./images/intro/welcom-catalog-desktop.svg">
-          <source media="(min-width: 768px)" srcset="./images/intro/welcom-catalog-tablet.svg">
-          <img class="intro__picture intro__picture--catalog" src="./images/intro/welcom-catalog.svg" width="229"
+          <source media="(min-width: 1200px)" srcset="./img/intro/welcom-catalog-desktop.svg">
+          <source media="(min-width: 768px)" srcset="./img/intro/welcom-catalog-tablet.svg">
+          <img class="intro__picture intro__picture--catalog" src="./img/intro/welcom-catalog.svg" width="229"
             height="39" alt="Добро пожаловать в великолепную Седону, потому что Гранд-Каньон отстой.">
         </picture>
       </div>
+
       <div class="intro__wrapper intro__wrapper--form">
 
         <h2 class="intro__slogan intro__slogan--form">Оставьте свой отзыв</h2>

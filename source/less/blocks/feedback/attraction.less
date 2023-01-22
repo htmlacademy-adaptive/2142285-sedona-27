@@ -143,21 +143,25 @@
 
 .control__input:checked + .control__mark {
   background: #f2f2f2;
-  background-image: url("../images/form/mark.svg");
+  background-image: url("../img/form/mark.svg");
   background-repeat: no-repeat;
   background-position: top 14px right 12px;
 }
 
 .control__input:checked:hover + .control__mark {
   background: #e5e5e5;
-  background-image: url("../images/form/mark.svg");
+  background-image: url("/source/img/form/mark.svg");
   background-repeat: no-repeat;
   background-position: top 14px right 12px;
 }
 
 .control__input:checked:active + .control__mark {
   background: #d5d5d5;
-  background-image: url("../images/form/mark-cheked.svg");
+  background-image: url("../img/form/mark-cheked.svg");
   background-repeat: no-repeat;
   background-position: top 14px right 12px;
+}
+
+.control:disabled + .control__mark {
+  opacity: 0.6;
 }

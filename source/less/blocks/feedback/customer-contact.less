@@ -32,7 +32,7 @@
   width: 280px;
   height: 58px;
   background: #f2f2f2;
-  border: none;
+  border: transparent;
   margin-bottom: 16px;
   position: relative;
   padding: 16px 63px 16px 16px;
@@ -49,36 +49,38 @@
 
 .form__label--customer-contact--phone::after {
   position: absolute;
-  content: url("../images/icon-phone.svg");
+  content: "";
+  width: 58px;
+  height: 58px;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-color: #e6e6e6;
+  background-position: 21px 17px;
   z-index: 3;
-  top: 60px;
-  right: 40px;
+  top: 39px;
+  right: 21px;
 
   @media (min-width: @tablet-width) {
-    top: 65px;
-    right: 19px;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 68px;
-    right: 22px;
+    top: 49px;
+    right: 0;
   }
 }
 
 .form__label--customer-contact--email::after {
   position: absolute;
-  content: url("../images/icon-email.svg");
+  content: "";
+  width: 58px;
+  height: 58px;
+  background-image: url("../img/icon-email.svg");
+  background-repeat: no-repeat;
+  background-color: #e6e6e6;
+  background-position: 21px 17px;
   z-index: 3;
-  top: 155px;
-  right: 41px;
+  top: 134px;
+  right: 21px;
 
   @media (min-width: @tablet-width) {
-    top: 163px;
-    right: 20px;
-  }
-
-  @media (min-width: @desktop-width) {
-    top: 163px;
-    right: 23px;
+    top: 144px;
+    right: 0;
   }
 }
