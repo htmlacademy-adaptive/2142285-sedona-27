@@ -9,7 +9,10 @@
   <link rel="icon" href="./img/" type="img/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicon180.svg">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="./fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="./fonts/ptsansbold.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
+
 </head>
 
 <body class="page__body">
@@ -48,7 +51,7 @@
       <img class="main-header__img" src="./img/main-logo.svg" width="185" height="96" alt="Логотип Седона.">
     </a>
 
-    <nav class="main-nav main-nav--closed  main-nav--nojs">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <div class="main-nav__wrapper">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть или закрыть меню.</span>
@@ -111,6 +114,12 @@
             </div>
 
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="./images/advantage/photo-city-desktop.webp 1x, ./images/advantage/photo-city-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="./images/advantage/photo-city-tablet.webp 1x, ./images/advantage/photo-city-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="./images/advantage/photo-city-mobile.webp 1x, ./images/advantage/photo-city-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)"
                 srcset="./img/advantage/photo-city-desktop.jpg 1x, ./img/advantage/photo-city-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
@@ -214,10 +223,13 @@
       </iframe>
     </section>
   </main>
+
   <footer class="main-footer">
+
     <div class="main-footer__wrapper">
       <a class="main-footer__site-sedona" href="#">#visitSEDONA
       </a>
+
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -246,6 +258,7 @@
           </li>
         </ul>
       </div>
+
       <div class="main-footer__create create">
         <a class="create__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg aria-hidden="true" focusable="false" width="128" height="35" fill="currentColor">
@@ -256,7 +269,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  
 </body>
 
 </html>
