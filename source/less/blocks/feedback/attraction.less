@@ -148,19 +148,15 @@
   background-position: top 14px right 12px;
 }
 
-.control__input:checked:hover + .control__mark {
+.control__input:focus + .control__mark {
+  outline: #000000 solid 2px;
+}
+
+.control__input:hover + .control__mark {
   background: #e5e5e5;
   background-image: url("../img/form/mark.svg");
   background-repeat: no-repeat;
   background-position: top 14px right 12px;
-}
-
-.control__input:focus-visible + .control__mark {
-  background: #f2f2f2;
-  background-image: url("../img/form/mark.svg");
-  background-repeat: no-repeat;
-  background-position: top 14px right 12px;
-  outline: #000000;
 }
 
 .control__input:checked:active + .control__mark {

@@ -117,14 +117,18 @@
   background: #f2f2f2;
   background-image: url("../img/form/mark-circle.svg");
   background-repeat: no-repeat;
-  background-position: top 16px right 14px;
+  background-position: top 14px right 12px;
 
   @media (min-width: @desktop-width) {
     background-position: top 18px right 13px;
   }
 }
 
-.control__input:checked:hover + .control__circle {
+.control__input:focus + .control__circle {
+  outline: #000000 solid 2px;
+}
+
+.control__input:hover + .control__circle {
   background: #e5e5e5;
   background-image: url("../img/form/mark-circle.svg");
   background-repeat: no-repeat;
