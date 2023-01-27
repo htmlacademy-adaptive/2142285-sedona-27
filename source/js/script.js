@@ -16,4 +16,3 @@ navToggle.addEventListener('click', function () {
 
 let mapImg = document.querySelector('.map__img');
 mapImg.classList.remove('.map');
-
