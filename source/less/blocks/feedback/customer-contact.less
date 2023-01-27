@@ -11,7 +11,7 @@
 }
 
 .customer-contact::before {
-  .form__group--before ();
+  .line--before ();
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -46,7 +46,17 @@
   }
 }
 
-.form__label--customer-contact--phone::after {
+.customer-contact__label {
+  @media (min-width: @tablet-width) {
+    padding-left: 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 31px;
+  }
+}
+
+.customer-contact__label--phone::after {
   position: absolute;
   content: "";
   width: 58px;
@@ -65,7 +75,7 @@
   }
 }
 
-.form__label--customer-contact--email::after {
+.customer-contact__label--email::after {
   position: absolute;
   content: "";
   width: 58px;

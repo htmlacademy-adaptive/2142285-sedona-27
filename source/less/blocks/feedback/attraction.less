@@ -102,7 +102,7 @@
 
 .attraction__title::before {
   @media (min-width: @tablet-width) {
-    .title--before();
+    .line__title--before();
     bottom: 48px;
     left: -1px;
   }
@@ -116,7 +116,7 @@
 
 .attraction__title::after {
   @media (min-width: @tablet-width) {
-    .title--after();
+    .line__title--after();
     bottom: 48px;
     right: -1px;
   }
@@ -130,42 +130,4 @@
 
 .attraction__control {
   position: relative;
-}
-
-.control__mark {
-  position: absolute;
-  top: -12px;
-  left: -61px;
-  width: 46px;
-  height: 46px;
-  background: #f2f2f2;
-}
-
-.control__input:checked + .control__mark {
-  background: #f2f2f2;
-  background-image: url("../img/form/mark.svg");
-  background-repeat: no-repeat;
-  background-position: top 14px right 12px;
-}
-
-.control__input:focus + .control__mark {
-  outline: #000000 solid 2px;
-}
-
-.control__input:hover + .control__mark {
-  background: #e5e5e5;
-  background-image: url("../img/form/mark.svg");
-  background-repeat: no-repeat;
-  background-position: top 14px right 12px;
-}
-
-.control__input:checked:active + .control__mark {
-  background: #d5d5d5;
-  background-image: url("../img/form/mark-cheked.svg");
-  background-repeat: no-repeat;
-  background-position: top 14px right 12px;
-}
-
-.control:disabled + .control__mark {
-  opacity: 0.6;
 }
