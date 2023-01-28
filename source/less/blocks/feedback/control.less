@@ -1,0 +1,93 @@
+.control__mark {
+  position: absolute;
+  top: -12px;
+  left: -61px;
+  width: 46px;
+  height: 46px;
+  background: #f2f2f2;
+}
+
+.control__input:checked + .control__mark {
+  background: #f2f2f2;
+  background-image: url("../img/form/mark.svg");
+  background-repeat: no-repeat;
+  background-position: top 14px right 12px;
+}
+
+.control__input:focus + .control__mark {
+  outline: #000000 solid 2px;
+}
+
+.control__input:hover + .control__mark {
+  background: #e5e5e5;
+  background-image: url("../img/form/mark.svg");
+  background-repeat: no-repeat;
+  background-position: top 14px right 12px;
+}
+
+.control__input:checked:active + .control__mark {
+  background: #d5d5d5;
+  background-image: url("../img/form/mark-cheked.svg");
+  background-repeat: no-repeat;
+  background-position: top 14px right 12px;
+}
+
+.control:disabled + .control__mark {
+  opacity: 0.6;
+}
+
+.control__circle {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: -64px;
+  width: 46px;
+  height: 46px;
+  background: #f2f2f2;
+  border-radius: 50%;
+}
+
+.control__input:checked + .control__circle {
+  background: #f2f2f2;
+  background-image: url("../img/form/mark-circle.svg");
+  background-repeat: no-repeat;
+  background-position: top 14px right 12px;
+
+  @media (min-width: @desktop-width) {
+    background-position: top 18px right 13px;
+  }
+}
+
+.control__input:focus + .control__circle {
+  outline: #000000 solid 2px;
+}
+
+.control__input:hover + .control__circle {
+  background: #e5e5e5;
+  background-image: url("../img/form/mark-circle.svg");
+  background-repeat: no-repeat;
+  background-position: top 16px right 14px;
+
+  @media (min-width: @desktop-width) {
+    background-position: top 18px right 13px;
+  }
+}
+
+.control__input:checked:active + .control__circle {
+  background: #d5d5d5;
+  background-image: url("../img/form/mark-circle-checked.svg");
+  background-repeat: no-repeat;
+  background-position: top 16px right 14px;
+
+  @media (min-width: @desktop-width) {
+    background-position: top 18px right 13px;
+  }
+}
+
+.control:disabled + .control__circle {
+  opacity: 0.6;
+}
+
+.control__label {
+  font-weight: 700;
+}

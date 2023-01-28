@@ -7,7 +7,7 @@
 }
 
 .emotions::before {
-  .form__group--before ();
+  .line--before ();
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -21,6 +21,7 @@
   background: #f2f2f2;
   padding: 13px;
   overflow: hidden;
+  resize: none;
 
   @media (min-width: @tablet-width) {
     width: 648px;
@@ -40,7 +41,7 @@
 
 .emotions__title::before {
   @media (min-width: @tablet-width) {
-    .title--before();
+    .line__title--before();
     bottom: 18px;
     left: -198px;
   }
@@ -53,7 +54,7 @@
 
 .emotions__title::after {
   @media (min-width: @tablet-width) {
-    .title--after();
+    .line__title--after();
     bottom: 18px;
     right: -198px;
   }
@@ -61,5 +62,38 @@
   @media (min-width: @desktop-width) {
     width: 280px;
     right: -352px;
+  }
+}
+
+.emotions__wrape {
+  padding: 0 0 24px 0;
+  margin-top: 52px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 0 20px 0;
+    margin-top: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 96px 0 96px;
+    margin-top: 41px;
+  }
+}
+
+.emotions__button {
+  width: 280px;
+  padding: 19px 30px 19px 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    padding: 22px 30px 16px 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 384px;
+    padding: 20px 96px 20px 96px;
   }
 }

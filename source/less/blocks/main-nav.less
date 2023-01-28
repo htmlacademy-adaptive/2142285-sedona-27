@@ -30,6 +30,43 @@
   }
 }
 
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  position: static;
+  padding-top: 31px;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    padding: 0;
+    grid-template-columns: repeat(5, 153px);
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(5, 239px);
+  }
+}
+
+.main-nav--nojs .main-nav__list {
+  display: block;
+
+  @media (min-width: @tablet-width) {
+    @media (min-width: @tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(5, 153px);
+    }
+
+    @media (min-width: @desktop-width) {
+      display: grid;
+      grid-template-columns: repeat(5, 239px);
+    }
+  }
+}
+
+
 .main-nav__toggle {
   cursor: pointer;
   border: none;

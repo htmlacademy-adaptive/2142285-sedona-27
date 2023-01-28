@@ -12,3 +12,7 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+
+let mapImg = document.querySelector('.map__img');
+mapImg.classList.remove('.map');

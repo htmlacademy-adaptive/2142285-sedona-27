@@ -1,8 +1,29 @@
 .map {
   margin-bottom: 10px;
+  background: url("../img/map/map-mobile.jpg");
+  height: 350px;
+  width: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/map/map-mobile@2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
+    background: url("../img/map/map-tablet.jpg");
     margin-bottom: 8px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("/source/img/map/map-tablet@2x.jpg");
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background: url("../img/map/map-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background: url("/source/img/map/map-desktop@2x.jpg");
+    }
   }
 }
 
@@ -10,7 +31,6 @@
   display: block;
   border: none;
   box-sizing: border-box;
-
 
   @media (min-width: @tablet-width) {
     width: 768px;
